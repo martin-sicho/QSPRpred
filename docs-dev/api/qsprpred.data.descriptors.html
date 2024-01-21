@@ -1,19 +1,21 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="en" >
+<html class="writer-html5" lang="en" data-content_root="../">
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>qsprpred.data.descriptors package &mdash; QSPRpred 3.0.0.dev250+gd447562.d20240119 documentation</title>
-      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <title>qsprpred.data.descriptors package &mdash; QSPRpred 0.1.dev1+g271e0df documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=19f00094" />
+
+  
   <!--[if lt IE 9]>
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
         <script src="../_static/jquery.js?v=5d32c60e"></script>
         <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-        <script src="../_static/documentation_options.js?v=d7e0d861"></script>
+        <script src="../_static/documentation_options.js?v=6a36b6b6"></script>
         <script src="../_static/doctools.js?v=888ff710"></script>
         <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../_static/js/theme.js"></script>
@@ -48,7 +50,7 @@
             QSPRpred
           </a>
               <div class="version">
-                v3.0.0.dev250+gd447562.d20240119
+                v0.1.dev1+g271e0df
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
@@ -64,7 +66,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../install.html">Installation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../use.html">Usage</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../use.html#cli-example">CLI Example</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="modules.html">qsprpred</a><ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">Python API</a><ul class="current">
 <li class="toctree-l2 current"><a class="reference internal" href="qsprpred.html">qsprpred package</a><ul class="current">
 <li class="toctree-l3 current"><a class="reference internal" href="qsprpred.html#subpackages">Subpackages</a><ul class="current">
 <li class="toctree-l4"><a class="reference internal" href="qsprpred.benchmarks.html">qsprpred.benchmarks package</a></li>
@@ -102,7 +104,7 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
-          <li class="breadcrumb-item"><a href="modules.html">qsprpred</a></li>
+          <li class="breadcrumb-item"><a href="modules.html">Python API</a></li>
           <li class="breadcrumb-item"><a href="qsprpred.html">qsprpred package</a></li>
           <li class="breadcrumb-item"><a href="qsprpred.data.html">qsprpred.data package</a></li>
       <li class="breadcrumb-item active">qsprpred.data.descriptors package</li>
@@ -5585,7 +5587,7 @@ block, allowing further test code to be executed.</p>
 <dl class="py method">
 <dt class="sig sig-object py" id="qsprpred.data.descriptors.tests.TestDescriptorsAll.testDescriptorsAll_00_RDkit_MULTICLASS">
 <span class="sig-name descname"><span class="pre">testDescriptorsAll_00_RDkit_MULTICLASS</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kw</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#qsprpred.data.descriptors.tests.TestDescriptorsAll.testDescriptorsAll_00_RDkit_MULTICLASS" title="Link to this definition"></a></dt>
-<dd><p>Tests all available descriptor sets [with _=’RDkit_MULTICLASS’, desc_set=&lt;qsprpred.data.descriptors.sets….tDescs object at 0x7f769e3f4d30&gt;, target_props=[{‘name’: ‘CL’, ‘task’: &lt;TargetT…LASS’&gt;, ‘th’: [0, 1, 10, 1200]}]].</p>
+<dd><p>Tests all available descriptor sets [with _=’RDkit_MULTICLASS’, desc_set=&lt;qsprpred.data.descriptors.sets….tDescs object at 0x7f27227737f0&gt;, target_props=[{‘name’: ‘CL’, ‘task’: &lt;TargetT…LASS’&gt;, ‘th’: [0, 1, 10, 1200]}]].</p>
 <p>Note that they are not checked with all possible settings and all possible
 preparations, but only with the default settings provided by
 <a class="reference internal" href="qsprpred.utils.testing.html#qsprpred.utils.testing.path_mixins.DataSetsPathMixIn.getDefaultPrep" title="qsprpred.utils.testing.path_mixins.DataSetsPathMixIn.getDefaultPrep"><code class="xref any py py-meth docutils literal notranslate"><span class="pre">DataSetsPathMixIn.getDefaultPrep()</span></code></a>. The list itself is defined and configured by
@@ -5596,7 +5598,7 @@ tested, add it there.</p>
 <dl class="py method">
 <dt class="sig sig-object py" id="qsprpred.data.descriptors.tests.TestDescriptorsAll.testDescriptorsAll_01_DrugExPhyschem_MULTICLASS">
 <span class="sig-name descname"><span class="pre">testDescriptorsAll_01_DrugExPhyschem_MULTICLASS</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kw</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#qsprpred.data.descriptors.tests.TestDescriptorsAll.testDescriptorsAll_01_DrugExPhyschem_MULTICLASS" title="Link to this definition"></a></dt>
-<dd><p>Tests all available descriptor sets [with _=’DrugExPhyschem_MULTICLASS’, desc_set=&lt;qsprpred.data.descriptors.sets….yschem object at 0x7f769e3f7190&gt;, target_props=[{‘name’: ‘CL’, ‘task’: &lt;TargetT…LASS’&gt;, ‘th’: [0, 1, 10, 1200]}]].</p>
+<dd><p>Tests all available descriptor sets [with _=’DrugExPhyschem_MULTICLASS’, desc_set=&lt;qsprpred.data.descriptors.sets….yschem object at 0x7f2722773850&gt;, target_props=[{‘name’: ‘CL’, ‘task’: &lt;TargetT…LASS’&gt;, ‘th’: [0, 1, 10, 1200]}]].</p>
 <p>Note that they are not checked with all possible settings and all possible
 preparations, but only with the default settings provided by
 <a class="reference internal" href="qsprpred.utils.testing.html#qsprpred.utils.testing.path_mixins.DataSetsPathMixIn.getDefaultPrep" title="qsprpred.utils.testing.path_mixins.DataSetsPathMixIn.getDefaultPrep"><code class="xref any py py-meth docutils literal notranslate"><span class="pre">DataSetsPathMixIn.getDefaultPrep()</span></code></a>. The list itself is defined and configured by
@@ -5607,7 +5609,7 @@ tested, add it there.</p>
 <dl class="py method">
 <dt class="sig sig-object py" id="qsprpred.data.descriptors.tests.TestDescriptorsAll.testDescriptorsAll_02_PredictorDesc_MULTICLASS">
 <span class="sig-name descname"><span class="pre">testDescriptorsAll_02_PredictorDesc_MULTICLASS</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kw</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#qsprpred.data.descriptors.tests.TestDescriptorsAll.testDescriptorsAll_02_PredictorDesc_MULTICLASS" title="Link to this definition"></a></dt>
-<dd><p>Tests all available descriptor sets [with _=’PredictorDesc_MULTICLASS’, desc_set=&lt;qsprpred.data.descriptors.sets….orDesc object at 0x7f769dc4ce20&gt;, target_props=[{‘name’: ‘CL’, ‘task’: &lt;TargetT…LASS’&gt;, ‘th’: [0, 1, 10, 1200]}]].</p>
+<dd><p>Tests all available descriptor sets [with _=’PredictorDesc_MULTICLASS’, desc_set=&lt;qsprpred.data.descriptors.sets….orDesc object at 0x7f27228e62f0&gt;, target_props=[{‘name’: ‘CL’, ‘task’: &lt;TargetT…LASS’&gt;, ‘th’: [0, 1, 10, 1200]}]].</p>
 <p>Note that they are not checked with all possible settings and all possible
 preparations, but only with the default settings provided by
 <a class="reference internal" href="qsprpred.utils.testing.html#qsprpred.utils.testing.path_mixins.DataSetsPathMixIn.getDefaultPrep" title="qsprpred.utils.testing.path_mixins.DataSetsPathMixIn.getDefaultPrep"><code class="xref any py py-meth docutils literal notranslate"><span class="pre">DataSetsPathMixIn.getDefaultPrep()</span></code></a>. The list itself is defined and configured by
@@ -5618,7 +5620,7 @@ tested, add it there.</p>
 <dl class="py method">
 <dt class="sig sig-object py" id="qsprpred.data.descriptors.tests.TestDescriptorsAll.testDescriptorsAll_03_TanimotoDistances_MULTICLASS">
 <span class="sig-name descname"><span class="pre">testDescriptorsAll_03_TanimotoDistances_MULTICLASS</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kw</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#qsprpred.data.descriptors.tests.TestDescriptorsAll.testDescriptorsAll_03_TanimotoDistances_MULTICLASS" title="Link to this definition"></a></dt>
-<dd><p>Tests all available descriptor sets [with _=’TanimotoDistances_MULTICLASS’, desc_set=&lt;qsprpred.data.descriptors.sets….tances object at 0x7f769e3f63e0&gt;, target_props=[{‘name’: ‘CL’, ‘task’: &lt;TargetT…LASS’&gt;, ‘th’: [0, 1, 10, 1200]}]].</p>
+<dd><p>Tests all available descriptor sets [with _=’TanimotoDistances_MULTICLASS’, desc_set=&lt;qsprpred.data.descriptors.sets….tances object at 0x7f2722772ec0&gt;, target_props=[{‘name’: ‘CL’, ‘task’: &lt;TargetT…LASS’&gt;, ‘th’: [0, 1, 10, 1200]}]].</p>
 <p>Note that they are not checked with all possible settings and all possible
 preparations, but only with the default settings provided by
 <a class="reference internal" href="qsprpred.utils.testing.html#qsprpred.utils.testing.path_mixins.DataSetsPathMixIn.getDefaultPrep" title="qsprpred.utils.testing.path_mixins.DataSetsPathMixIn.getDefaultPrep"><code class="xref any py py-meth docutils literal notranslate"><span class="pre">DataSetsPathMixIn.getDefaultPrep()</span></code></a>. The list itself is defined and configured by
@@ -5629,7 +5631,7 @@ tested, add it there.</p>
 <dl class="py method">
 <dt class="sig sig-object py" id="qsprpred.data.descriptors.tests.TestDescriptorsAll.testDescriptorsAll_04_MorganFP_MULTICLASS">
 <span class="sig-name descname"><span class="pre">testDescriptorsAll_04_MorganFP_MULTICLASS</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kw</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#qsprpred.data.descriptors.tests.TestDescriptorsAll.testDescriptorsAll_04_MorganFP_MULTICLASS" title="Link to this definition"></a></dt>
-<dd><p>Tests all available descriptor sets [with _=’MorganFP_MULTICLASS’, desc_set=&lt;qsprpred.data.descriptors.finge…rganFP object at 0x7f769e3f4d60&gt;, target_props=[{‘name’: ‘CL’, ‘task’: &lt;TargetT…LASS’&gt;, ‘th’: [0, 1, 10, 1200]}]].</p>
+<dd><p>Tests all available descriptor sets [with _=’MorganFP_MULTICLASS’, desc_set=&lt;qsprpred.data.descriptors.finge…rganFP object at 0x7f2722772e90&gt;, target_props=[{‘name’: ‘CL’, ‘task’: &lt;TargetT…LASS’&gt;, ‘th’: [0, 1, 10, 1200]}]].</p>
 <p>Note that they are not checked with all possible settings and all possible
 preparations, but only with the default settings provided by
 <a class="reference internal" href="qsprpred.utils.testing.html#qsprpred.utils.testing.path_mixins.DataSetsPathMixIn.getDefaultPrep" title="qsprpred.utils.testing.path_mixins.DataSetsPathMixIn.getDefaultPrep"><code class="xref any py py-meth docutils literal notranslate"><span class="pre">DataSetsPathMixIn.getDefaultPrep()</span></code></a>. The list itself is defined and configured by
@@ -5640,7 +5642,7 @@ tested, add it there.</p>
 <dl class="py method">
 <dt class="sig sig-object py" id="qsprpred.data.descriptors.tests.TestDescriptorsAll.testDescriptorsAll_05_RDkit_REGRESSION">
 <span class="sig-name descname"><span class="pre">testDescriptorsAll_05_RDkit_REGRESSION</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kw</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#qsprpred.data.descriptors.tests.TestDescriptorsAll.testDescriptorsAll_05_RDkit_REGRESSION" title="Link to this definition"></a></dt>
-<dd><p>Tests all available descriptor sets [with _=’RDkit_REGRESSION’, desc_set=&lt;qsprpred.data.descriptors.sets….tDescs object at 0x7f769e468190&gt;, target_props=[{‘name’: ‘CL’, ‘task’: &lt;TargetTasks.REGRESSION: ‘REGRESSION’&gt;}]].</p>
+<dd><p>Tests all available descriptor sets [with _=’RDkit_REGRESSION’, desc_set=&lt;qsprpred.data.descriptors.sets….tDescs object at 0x7f2722772e60&gt;, target_props=[{‘name’: ‘CL’, ‘task’: &lt;TargetTasks.REGRESSION: ‘REGRESSION’&gt;}]].</p>
 <p>Note that they are not checked with all possible settings and all possible
 preparations, but only with the default settings provided by
 <a class="reference internal" href="qsprpred.utils.testing.html#qsprpred.utils.testing.path_mixins.DataSetsPathMixIn.getDefaultPrep" title="qsprpred.utils.testing.path_mixins.DataSetsPathMixIn.getDefaultPrep"><code class="xref any py py-meth docutils literal notranslate"><span class="pre">DataSetsPathMixIn.getDefaultPrep()</span></code></a>. The list itself is defined and configured by
@@ -5651,7 +5653,7 @@ tested, add it there.</p>
 <dl class="py method">
 <dt class="sig sig-object py" id="qsprpred.data.descriptors.tests.TestDescriptorsAll.testDescriptorsAll_06_DrugExPhyschem_REGRESSION">
 <span class="sig-name descname"><span class="pre">testDescriptorsAll_06_DrugExPhyschem_REGRESSION</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kw</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#qsprpred.data.descriptors.tests.TestDescriptorsAll.testDescriptorsAll_06_DrugExPhyschem_REGRESSION" title="Link to this definition"></a></dt>
-<dd><p>Tests all available descriptor sets [with _=’DrugExPhyschem_REGRESSION’, desc_set=&lt;qsprpred.data.descriptors.sets….yschem object at 0x7f769e468280&gt;, target_props=[{‘name’: ‘CL’, ‘task’: &lt;TargetTasks.REGRESSION: ‘REGRESSION’&gt;}]].</p>
+<dd><p>Tests all available descriptor sets [with _=’DrugExPhyschem_REGRESSION’, desc_set=&lt;qsprpred.data.descriptors.sets….yschem object at 0x7f2722772e00&gt;, target_props=[{‘name’: ‘CL’, ‘task’: &lt;TargetTasks.REGRESSION: ‘REGRESSION’&gt;}]].</p>
 <p>Note that they are not checked with all possible settings and all possible
 preparations, but only with the default settings provided by
 <a class="reference internal" href="qsprpred.utils.testing.html#qsprpred.utils.testing.path_mixins.DataSetsPathMixIn.getDefaultPrep" title="qsprpred.utils.testing.path_mixins.DataSetsPathMixIn.getDefaultPrep"><code class="xref any py py-meth docutils literal notranslate"><span class="pre">DataSetsPathMixIn.getDefaultPrep()</span></code></a>. The list itself is defined and configured by
@@ -5662,7 +5664,7 @@ tested, add it there.</p>
 <dl class="py method">
 <dt class="sig sig-object py" id="qsprpred.data.descriptors.tests.TestDescriptorsAll.testDescriptorsAll_07_PredictorDesc_REGRESSION">
 <span class="sig-name descname"><span class="pre">testDescriptorsAll_07_PredictorDesc_REGRESSION</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kw</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#qsprpred.data.descriptors.tests.TestDescriptorsAll.testDescriptorsAll_07_PredictorDesc_REGRESSION" title="Link to this definition"></a></dt>
-<dd><p>Tests all available descriptor sets [with _=’PredictorDesc_REGRESSION’, desc_set=&lt;qsprpred.data.descriptors.sets….orDesc object at 0x7f769e46b700&gt;, target_props=[{‘name’: ‘CL’, ‘task’: &lt;TargetTasks.REGRESSION: ‘REGRESSION’&gt;}]].</p>
+<dd><p>Tests all available descriptor sets [with _=’PredictorDesc_REGRESSION’, desc_set=&lt;qsprpred.data.descriptors.sets….orDesc object at 0x7f27254a38b0&gt;, target_props=[{‘name’: ‘CL’, ‘task’: &lt;TargetTasks.REGRESSION: ‘REGRESSION’&gt;}]].</p>
 <p>Note that they are not checked with all possible settings and all possible
 preparations, but only with the default settings provided by
 <a class="reference internal" href="qsprpred.utils.testing.html#qsprpred.utils.testing.path_mixins.DataSetsPathMixIn.getDefaultPrep" title="qsprpred.utils.testing.path_mixins.DataSetsPathMixIn.getDefaultPrep"><code class="xref any py py-meth docutils literal notranslate"><span class="pre">DataSetsPathMixIn.getDefaultPrep()</span></code></a>. The list itself is defined and configured by
@@ -5673,7 +5675,7 @@ tested, add it there.</p>
 <dl class="py method">
 <dt class="sig sig-object py" id="qsprpred.data.descriptors.tests.TestDescriptorsAll.testDescriptorsAll_08_TanimotoDistances_REGRESSION">
 <span class="sig-name descname"><span class="pre">testDescriptorsAll_08_TanimotoDistances_REGRESSION</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kw</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#qsprpred.data.descriptors.tests.TestDescriptorsAll.testDescriptorsAll_08_TanimotoDistances_REGRESSION" title="Link to this definition"></a></dt>
-<dd><p>Tests all available descriptor sets [with _=’TanimotoDistances_REGRESSION’, desc_set=&lt;qsprpred.data.descriptors.sets….tances object at 0x7f769e4cb8b0&gt;, target_props=[{‘name’: ‘CL’, ‘task’: &lt;TargetTasks.REGRESSION: ‘REGRESSION’&gt;}]].</p>
+<dd><p>Tests all available descriptor sets [with _=’TanimotoDistances_REGRESSION’, desc_set=&lt;qsprpred.data.descriptors.sets….tances object at 0x7f272330dfc0&gt;, target_props=[{‘name’: ‘CL’, ‘task’: &lt;TargetTasks.REGRESSION: ‘REGRESSION’&gt;}]].</p>
 <p>Note that they are not checked with all possible settings and all possible
 preparations, but only with the default settings provided by
 <a class="reference internal" href="qsprpred.utils.testing.html#qsprpred.utils.testing.path_mixins.DataSetsPathMixIn.getDefaultPrep" title="qsprpred.utils.testing.path_mixins.DataSetsPathMixIn.getDefaultPrep"><code class="xref any py py-meth docutils literal notranslate"><span class="pre">DataSetsPathMixIn.getDefaultPrep()</span></code></a>. The list itself is defined and configured by
@@ -5684,7 +5686,7 @@ tested, add it there.</p>
 <dl class="py method">
 <dt class="sig sig-object py" id="qsprpred.data.descriptors.tests.TestDescriptorsAll.testDescriptorsAll_09_MorganFP_REGRESSION">
 <span class="sig-name descname"><span class="pre">testDescriptorsAll_09_MorganFP_REGRESSION</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kw</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#qsprpred.data.descriptors.tests.TestDescriptorsAll.testDescriptorsAll_09_MorganFP_REGRESSION" title="Link to this definition"></a></dt>
-<dd><p>Tests all available descriptor sets [with _=’MorganFP_REGRESSION’, desc_set=&lt;qsprpred.data.descriptors.finge…rganFP object at 0x7f769e4cb7c0&gt;, target_props=[{‘name’: ‘CL’, ‘task’: &lt;TargetTasks.REGRESSION: ‘REGRESSION’&gt;}]].</p>
+<dd><p>Tests all available descriptor sets [with _=’MorganFP_REGRESSION’, desc_set=&lt;qsprpred.data.descriptors.finge…rganFP object at 0x7f272330e500&gt;, target_props=[{‘name’: ‘CL’, ‘task’: &lt;TargetTasks.REGRESSION: ‘REGRESSION’&gt;}]].</p>
 <p>Note that they are not checked with all possible settings and all possible
 preparations, but only with the default settings provided by
 <a class="reference internal" href="qsprpred.utils.testing.html#qsprpred.utils.testing.path_mixins.DataSetsPathMixIn.getDefaultPrep" title="qsprpred.utils.testing.path_mixins.DataSetsPathMixIn.getDefaultPrep"><code class="xref any py py-meth docutils literal notranslate"><span class="pre">DataSetsPathMixIn.getDefaultPrep()</span></code></a>. The list itself is defined and configured by
@@ -5695,7 +5697,7 @@ tested, add it there.</p>
 <dl class="py method">
 <dt class="sig sig-object py" id="qsprpred.data.descriptors.tests.TestDescriptorsAll.testDescriptorsAll_10_RDkit_Multitask">
 <span class="sig-name descname"><span class="pre">testDescriptorsAll_10_RDkit_Multitask</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kw</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#qsprpred.data.descriptors.tests.TestDescriptorsAll.testDescriptorsAll_10_RDkit_Multitask" title="Link to this definition"></a></dt>
-<dd><p>Tests all available descriptor sets [with _=’RDkit_Multitask’, desc_set=&lt;qsprpred.data.descriptors.sets….tDescs object at 0x7f769e4cab30&gt;, target_props=[{‘name’: ‘CL’, ‘task’: &lt;TargetT…S: ‘SINGLECLASS’&gt;, ‘th’: [0.3]}]].</p>
+<dd><p>Tests all available descriptor sets [with _=’RDkit_Multitask’, desc_set=&lt;qsprpred.data.descriptors.sets….tDescs object at 0x7f272330ce80&gt;, target_props=[{‘name’: ‘CL’, ‘task’: &lt;TargetT…S: ‘SINGLECLASS’&gt;, ‘th’: [0.3]}]].</p>
 <p>Note that they are not checked with all possible settings and all possible
 preparations, but only with the default settings provided by
 <a class="reference internal" href="qsprpred.utils.testing.html#qsprpred.utils.testing.path_mixins.DataSetsPathMixIn.getDefaultPrep" title="qsprpred.utils.testing.path_mixins.DataSetsPathMixIn.getDefaultPrep"><code class="xref any py py-meth docutils literal notranslate"><span class="pre">DataSetsPathMixIn.getDefaultPrep()</span></code></a>. The list itself is defined and configured by
@@ -5706,7 +5708,7 @@ tested, add it there.</p>
 <dl class="py method">
 <dt class="sig sig-object py" id="qsprpred.data.descriptors.tests.TestDescriptorsAll.testDescriptorsAll_11_DrugExPhyschem_Multitask">
 <span class="sig-name descname"><span class="pre">testDescriptorsAll_11_DrugExPhyschem_Multitask</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kw</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#qsprpred.data.descriptors.tests.TestDescriptorsAll.testDescriptorsAll_11_DrugExPhyschem_Multitask" title="Link to this definition"></a></dt>
-<dd><p>Tests all available descriptor sets [with _=’DrugExPhyschem_Multitask’, desc_set=&lt;qsprpred.data.descriptors.sets….yschem object at 0x7f769e4cb760&gt;, target_props=[{‘name’: ‘CL’, ‘task’: &lt;TargetT…S: ‘SINGLECLASS’&gt;, ‘th’: [0.3]}]].</p>
+<dd><p>Tests all available descriptor sets [with _=’DrugExPhyschem_Multitask’, desc_set=&lt;qsprpred.data.descriptors.sets….yschem object at 0x7f272330e050&gt;, target_props=[{‘name’: ‘CL’, ‘task’: &lt;TargetT…S: ‘SINGLECLASS’&gt;, ‘th’: [0.3]}]].</p>
 <p>Note that they are not checked with all possible settings and all possible
 preparations, but only with the default settings provided by
 <a class="reference internal" href="qsprpred.utils.testing.html#qsprpred.utils.testing.path_mixins.DataSetsPathMixIn.getDefaultPrep" title="qsprpred.utils.testing.path_mixins.DataSetsPathMixIn.getDefaultPrep"><code class="xref any py py-meth docutils literal notranslate"><span class="pre">DataSetsPathMixIn.getDefaultPrep()</span></code></a>. The list itself is defined and configured by
@@ -5717,7 +5719,7 @@ tested, add it there.</p>
 <dl class="py method">
 <dt class="sig sig-object py" id="qsprpred.data.descriptors.tests.TestDescriptorsAll.testDescriptorsAll_12_PredictorDesc_Multitask">
 <span class="sig-name descname"><span class="pre">testDescriptorsAll_12_PredictorDesc_Multitask</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kw</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#qsprpred.data.descriptors.tests.TestDescriptorsAll.testDescriptorsAll_12_PredictorDesc_Multitask" title="Link to this definition"></a></dt>
-<dd><p>Tests all available descriptor sets [with _=’PredictorDesc_Multitask’, desc_set=&lt;qsprpred.data.descriptors.sets….orDesc object at 0x7f769e67c670&gt;, target_props=[{‘name’: ‘CL’, ‘task’: &lt;TargetT…S: ‘SINGLECLASS’&gt;, ‘th’: [0.3]}]].</p>
+<dd><p>Tests all available descriptor sets [with _=’PredictorDesc_Multitask’, desc_set=&lt;qsprpred.data.descriptors.sets….orDesc object at 0x7f2725ad8820&gt;, target_props=[{‘name’: ‘CL’, ‘task’: &lt;TargetT…S: ‘SINGLECLASS’&gt;, ‘th’: [0.3]}]].</p>
 <p>Note that they are not checked with all possible settings and all possible
 preparations, but only with the default settings provided by
 <a class="reference internal" href="qsprpred.utils.testing.html#qsprpred.utils.testing.path_mixins.DataSetsPathMixIn.getDefaultPrep" title="qsprpred.utils.testing.path_mixins.DataSetsPathMixIn.getDefaultPrep"><code class="xref any py py-meth docutils literal notranslate"><span class="pre">DataSetsPathMixIn.getDefaultPrep()</span></code></a>. The list itself is defined and configured by
@@ -5728,7 +5730,7 @@ tested, add it there.</p>
 <dl class="py method">
 <dt class="sig sig-object py" id="qsprpred.data.descriptors.tests.TestDescriptorsAll.testDescriptorsAll_13_TanimotoDistances_Multitask">
 <span class="sig-name descname"><span class="pre">testDescriptorsAll_13_TanimotoDistances_Multitask</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kw</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#qsprpred.data.descriptors.tests.TestDescriptorsAll.testDescriptorsAll_13_TanimotoDistances_Multitask" title="Link to this definition"></a></dt>
-<dd><p>Tests all available descriptor sets [with _=’TanimotoDistances_Multitask’, desc_set=&lt;qsprpred.data.descriptors.sets….tances object at 0x7f769ee6f280&gt;, target_props=[{‘name’: ‘CL’, ‘task’: &lt;TargetT…S: ‘SINGLECLASS’&gt;, ‘th’: [0.3]}]].</p>
+<dd><p>Tests all available descriptor sets [with _=’TanimotoDistances_Multitask’, desc_set=&lt;qsprpred.data.descriptors.sets….tances object at 0x7f2725a94fa0&gt;, target_props=[{‘name’: ‘CL’, ‘task’: &lt;TargetT…S: ‘SINGLECLASS’&gt;, ‘th’: [0.3]}]].</p>
 <p>Note that they are not checked with all possible settings and all possible
 preparations, but only with the default settings provided by
 <a class="reference internal" href="qsprpred.utils.testing.html#qsprpred.utils.testing.path_mixins.DataSetsPathMixIn.getDefaultPrep" title="qsprpred.utils.testing.path_mixins.DataSetsPathMixIn.getDefaultPrep"><code class="xref any py py-meth docutils literal notranslate"><span class="pre">DataSetsPathMixIn.getDefaultPrep()</span></code></a>. The list itself is defined and configured by
@@ -5739,7 +5741,7 @@ tested, add it there.</p>
 <dl class="py method">
 <dt class="sig sig-object py" id="qsprpred.data.descriptors.tests.TestDescriptorsAll.testDescriptorsAll_14_MorganFP_Multitask">
 <span class="sig-name descname"><span class="pre">testDescriptorsAll_14_MorganFP_Multitask</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kw</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#qsprpred.data.descriptors.tests.TestDescriptorsAll.testDescriptorsAll_14_MorganFP_Multitask" title="Link to this definition"></a></dt>
-<dd><p>Tests all available descriptor sets [with _=’MorganFP_Multitask’, desc_set=&lt;qsprpred.data.descriptors.finge…rganFP object at 0x7f769ee6e0b0&gt;, target_props=[{‘name’: ‘CL’, ‘task’: &lt;TargetT…S: ‘SINGLECLASS’&gt;, ‘th’: [0.3]}]].</p>
+<dd><p>Tests all available descriptor sets [with _=’MorganFP_Multitask’, desc_set=&lt;qsprpred.data.descriptors.finge…rganFP object at 0x7f2725a95ba0&gt;, target_props=[{‘name’: ‘CL’, ‘task’: &lt;TargetT…S: ‘SINGLECLASS’&gt;, ‘th’: [0.3]}]].</p>
 <p>Note that they are not checked with all possible settings and all possible
 preparations, but only with the default settings provided by
 <a class="reference internal" href="qsprpred.utils.testing.html#qsprpred.utils.testing.path_mixins.DataSetsPathMixIn.getDefaultPrep" title="qsprpred.utils.testing.path_mixins.DataSetsPathMixIn.getDefaultPrep"><code class="xref any py py-meth docutils literal notranslate"><span class="pre">DataSetsPathMixIn.getDefaultPrep()</span></code></a>. The list itself is defined and configured by

@@ -1,19 +1,21 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="en" >
+<html class="writer-html5" lang="en" data-content_root="../">
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>qsprpred.extra.gpu package &mdash; QSPRpred 3.0.0.dev250+gd447562.d20240119 documentation</title>
-      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <title>qsprpred.extra.gpu package &mdash; QSPRpred 0.1.dev1+g271e0df documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=19f00094" />
+
+  
   <!--[if lt IE 9]>
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
         <script src="../_static/jquery.js?v=5d32c60e"></script>
         <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-        <script src="../_static/documentation_options.js?v=d7e0d861"></script>
+        <script src="../_static/documentation_options.js?v=6a36b6b6"></script>
         <script src="../_static/doctools.js?v=888ff710"></script>
         <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../_static/js/theme.js"></script>
@@ -48,7 +50,7 @@
             QSPRpred
           </a>
               <div class="version">
-                v3.0.0.dev250+gd447562.d20240119
+                v0.1.dev1+g271e0df
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
@@ -64,7 +66,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../install.html">Installation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../use.html">Usage</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../use.html#cli-example">CLI Example</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="modules.html">qsprpred</a><ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">Python API</a><ul class="current">
 <li class="toctree-l2 current"><a class="reference internal" href="qsprpred.html">qsprpred package</a><ul class="current">
 <li class="toctree-l3 current"><a class="reference internal" href="qsprpred.html#subpackages">Subpackages</a><ul class="current">
 <li class="toctree-l4"><a class="reference internal" href="qsprpred.benchmarks.html">qsprpred.benchmarks package</a></li>
@@ -102,7 +104,7 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
-          <li class="breadcrumb-item"><a href="modules.html">qsprpred</a></li>
+          <li class="breadcrumb-item"><a href="modules.html">Python API</a></li>
           <li class="breadcrumb-item"><a href="qsprpred.html">qsprpred package</a></li>
           <li class="breadcrumb-item"><a href="qsprpred.extra.html">qsprpred.extra package</a></li>
       <li class="breadcrumb-item active">qsprpred.extra.gpu package</li>
@@ -381,81 +383,7 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="qsprpred.extra.gpu.models.html#module-qsprpred.extra.gpu.models.pyboost">qsprpred.extra.gpu.models.pyboost module</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="qsprpred.extra.gpu.models.html#qsprpred.extra.gpu.models.pyboost.BCEWithNaNLoss"><code class="docutils literal notranslate"><span class="pre">BCEWithNaNLoss</span></code></a><ul>
-<li class="toctree-l4"><a class="reference internal" href="qsprpred.extra.gpu.models.html#qsprpred.extra.gpu.models.pyboost.BCEWithNaNLoss.base_score"><code class="docutils literal notranslate"><span class="pre">BCEWithNaNLoss.base_score()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="qsprpred.extra.gpu.models.html#qsprpred.extra.gpu.models.pyboost.BCEWithNaNLoss.get_grad_hess"><code class="docutils literal notranslate"><span class="pre">BCEWithNaNLoss.get_grad_hess()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="qsprpred.extra.gpu.models.html#qsprpred.extra.gpu.models.pyboost.BCEWithNaNLoss.get_metric_from_string"><code class="docutils literal notranslate"><span class="pre">BCEWithNaNLoss.get_metric_from_string()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="qsprpred.extra.gpu.models.html#qsprpred.extra.gpu.models.pyboost.BCEWithNaNLoss.postprocess_output"><code class="docutils literal notranslate"><span class="pre">BCEWithNaNLoss.postprocess_output()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="qsprpred.extra.gpu.models.html#qsprpred.extra.gpu.models.pyboost.BCEWithNaNLoss.preprocess_input"><code class="docutils literal notranslate"><span class="pre">BCEWithNaNLoss.preprocess_input()</span></code></a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="qsprpred.extra.gpu.models.html#qsprpred.extra.gpu.models.pyboost.MSEwithNaNLoss"><code class="docutils literal notranslate"><span class="pre">MSEwithNaNLoss</span></code></a><ul>
-<li class="toctree-l4"><a class="reference internal" href="qsprpred.extra.gpu.models.html#qsprpred.extra.gpu.models.pyboost.MSEwithNaNLoss.base_score"><code class="docutils literal notranslate"><span class="pre">MSEwithNaNLoss.base_score()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="qsprpred.extra.gpu.models.html#qsprpred.extra.gpu.models.pyboost.MSEwithNaNLoss.get_grad_hess"><code class="docutils literal notranslate"><span class="pre">MSEwithNaNLoss.get_grad_hess()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="qsprpred.extra.gpu.models.html#qsprpred.extra.gpu.models.pyboost.MSEwithNaNLoss.get_metric_from_string"><code class="docutils literal notranslate"><span class="pre">MSEwithNaNLoss.get_metric_from_string()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="qsprpred.extra.gpu.models.html#qsprpred.extra.gpu.models.pyboost.MSEwithNaNLoss.postprocess_output"><code class="docutils literal notranslate"><span class="pre">MSEwithNaNLoss.postprocess_output()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="qsprpred.extra.gpu.models.html#qsprpred.extra.gpu.models.pyboost.MSEwithNaNLoss.preprocess_input"><code class="docutils literal notranslate"><span class="pre">MSEwithNaNLoss.preprocess_input()</span></code></a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="qsprpred.extra.gpu.models.html#qsprpred.extra.gpu.models.pyboost.NaNAucMetric"><code class="docutils literal notranslate"><span class="pre">NaNAucMetric</span></code></a><ul>
-<li class="toctree-l4"><a class="reference internal" href="qsprpred.extra.gpu.models.html#qsprpred.extra.gpu.models.pyboost.NaNAucMetric.alias"><code class="docutils literal notranslate"><span class="pre">NaNAucMetric.alias</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="qsprpred.extra.gpu.models.html#qsprpred.extra.gpu.models.pyboost.NaNAucMetric.argmax"><code class="docutils literal notranslate"><span class="pre">NaNAucMetric.argmax()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="qsprpred.extra.gpu.models.html#qsprpred.extra.gpu.models.pyboost.NaNAucMetric.compare"><code class="docutils literal notranslate"><span class="pre">NaNAucMetric.compare()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="qsprpred.extra.gpu.models.html#qsprpred.extra.gpu.models.pyboost.NaNAucMetric.error"><code class="docutils literal notranslate"><span class="pre">NaNAucMetric.error()</span></code></a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="qsprpred.extra.gpu.models.html#qsprpred.extra.gpu.models.pyboost.NaNR2Score"><code class="docutils literal notranslate"><span class="pre">NaNR2Score</span></code></a><ul>
-<li class="toctree-l4"><a class="reference internal" href="qsprpred.extra.gpu.models.html#qsprpred.extra.gpu.models.pyboost.NaNR2Score.alias"><code class="docutils literal notranslate"><span class="pre">NaNR2Score.alias</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="qsprpred.extra.gpu.models.html#qsprpred.extra.gpu.models.pyboost.NaNR2Score.argmax"><code class="docutils literal notranslate"><span class="pre">NaNR2Score.argmax()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="qsprpred.extra.gpu.models.html#qsprpred.extra.gpu.models.pyboost.NaNR2Score.compare"><code class="docutils literal notranslate"><span class="pre">NaNR2Score.compare()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="qsprpred.extra.gpu.models.html#qsprpred.extra.gpu.models.pyboost.NaNR2Score.error"><code class="docutils literal notranslate"><span class="pre">NaNR2Score.error()</span></code></a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="qsprpred.extra.gpu.models.html#qsprpred.extra.gpu.models.pyboost.NaNRMSEScore"><code class="docutils literal notranslate"><span class="pre">NaNRMSEScore</span></code></a><ul>
-<li class="toctree-l4"><a class="reference internal" href="qsprpred.extra.gpu.models.html#qsprpred.extra.gpu.models.pyboost.NaNRMSEScore.alias"><code class="docutils literal notranslate"><span class="pre">NaNRMSEScore.alias</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="qsprpred.extra.gpu.models.html#qsprpred.extra.gpu.models.pyboost.NaNRMSEScore.argmax"><code class="docutils literal notranslate"><span class="pre">NaNRMSEScore.argmax()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="qsprpred.extra.gpu.models.html#qsprpred.extra.gpu.models.pyboost.NaNRMSEScore.compare"><code class="docutils literal notranslate"><span class="pre">NaNRMSEScore.compare()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="qsprpred.extra.gpu.models.html#qsprpred.extra.gpu.models.pyboost.NaNRMSEScore.error"><code class="docutils literal notranslate"><span class="pre">NaNRMSEScore.error()</span></code></a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="qsprpred.extra.gpu.models.html#qsprpred.extra.gpu.models.pyboost.PyBoostModel"><code class="docutils literal notranslate"><span class="pre">PyBoostModel</span></code></a><ul>
-<li class="toctree-l4"><a class="reference internal" href="qsprpred.extra.gpu.models.html#qsprpred.extra.gpu.models.pyboost.PyBoostModel.checkForData"><code class="docutils literal notranslate"><span class="pre">PyBoostModel.checkForData()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="qsprpred.extra.gpu.models.html#qsprpred.extra.gpu.models.pyboost.PyBoostModel.classPath"><code class="docutils literal notranslate"><span class="pre">PyBoostModel.classPath</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="qsprpred.extra.gpu.models.html#qsprpred.extra.gpu.models.pyboost.PyBoostModel.cleanFiles"><code class="docutils literal notranslate"><span class="pre">PyBoostModel.cleanFiles()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="qsprpred.extra.gpu.models.html#qsprpred.extra.gpu.models.pyboost.PyBoostModel.convertToNumpy"><code class="docutils literal notranslate"><span class="pre">PyBoostModel.convertToNumpy()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="qsprpred.extra.gpu.models.html#qsprpred.extra.gpu.models.pyboost.PyBoostModel.createPredictionDatasetFromMols"><code class="docutils literal notranslate"><span class="pre">PyBoostModel.createPredictionDatasetFromMols()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="qsprpred.extra.gpu.models.html#qsprpred.extra.gpu.models.pyboost.PyBoostModel.fit"><code class="docutils literal notranslate"><span class="pre">PyBoostModel.fit()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="qsprpred.extra.gpu.models.html#qsprpred.extra.gpu.models.pyboost.PyBoostModel.fitAttached"><code class="docutils literal notranslate"><span class="pre">PyBoostModel.fitAttached()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="qsprpred.extra.gpu.models.html#qsprpred.extra.gpu.models.pyboost.PyBoostModel.fromFile"><code class="docutils literal notranslate"><span class="pre">PyBoostModel.fromFile()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="qsprpred.extra.gpu.models.html#qsprpred.extra.gpu.models.pyboost.PyBoostModel.fromJSON"><code class="docutils literal notranslate"><span class="pre">PyBoostModel.fromJSON()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="qsprpred.extra.gpu.models.html#qsprpred.extra.gpu.models.pyboost.PyBoostModel.getParameters"><code class="docutils literal notranslate"><span class="pre">PyBoostModel.getParameters()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="qsprpred.extra.gpu.models.html#qsprpred.extra.gpu.models.pyboost.PyBoostModel.handleInvalidsInPredictions"><code class="docutils literal notranslate"><span class="pre">PyBoostModel.handleInvalidsInPredictions()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="qsprpred.extra.gpu.models.html#qsprpred.extra.gpu.models.pyboost.PyBoostModel.initFromData"><code class="docutils literal notranslate"><span class="pre">PyBoostModel.initFromData()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="qsprpred.extra.gpu.models.html#qsprpred.extra.gpu.models.pyboost.PyBoostModel.initRandomState"><code class="docutils literal notranslate"><span class="pre">PyBoostModel.initRandomState()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="qsprpred.extra.gpu.models.html#qsprpred.extra.gpu.models.pyboost.PyBoostModel.isMultiTask"><code class="docutils literal notranslate"><span class="pre">PyBoostModel.isMultiTask</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="qsprpred.extra.gpu.models.html#qsprpred.extra.gpu.models.pyboost.PyBoostModel.loadEstimator"><code class="docutils literal notranslate"><span class="pre">PyBoostModel.loadEstimator()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="qsprpred.extra.gpu.models.html#qsprpred.extra.gpu.models.pyboost.PyBoostModel.loadEstimatorFromFile"><code class="docutils literal notranslate"><span class="pre">PyBoostModel.loadEstimatorFromFile()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="qsprpred.extra.gpu.models.html#qsprpred.extra.gpu.models.pyboost.PyBoostModel.loadParamsGrid"><code class="docutils literal notranslate"><span class="pre">PyBoostModel.loadParamsGrid()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="qsprpred.extra.gpu.models.html#qsprpred.extra.gpu.models.pyboost.PyBoostModel.metaFile"><code class="docutils literal notranslate"><span class="pre">PyBoostModel.metaFile</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="qsprpred.extra.gpu.models.html#qsprpred.extra.gpu.models.pyboost.PyBoostModel.optimalEpochs"><code class="docutils literal notranslate"><span class="pre">PyBoostModel.optimalEpochs</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="qsprpred.extra.gpu.models.html#qsprpred.extra.gpu.models.pyboost.PyBoostModel.outDir"><code class="docutils literal notranslate"><span class="pre">PyBoostModel.outDir</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="qsprpred.extra.gpu.models.html#qsprpred.extra.gpu.models.pyboost.PyBoostModel.outPrefix"><code class="docutils literal notranslate"><span class="pre">PyBoostModel.outPrefix</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="qsprpred.extra.gpu.models.html#qsprpred.extra.gpu.models.pyboost.PyBoostModel.predict"><code class="docutils literal notranslate"><span class="pre">PyBoostModel.predict()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="qsprpred.extra.gpu.models.html#qsprpred.extra.gpu.models.pyboost.PyBoostModel.predictDataset"><code class="docutils literal notranslate"><span class="pre">PyBoostModel.predictDataset()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="qsprpred.extra.gpu.models.html#qsprpred.extra.gpu.models.pyboost.PyBoostModel.predictMols"><code class="docutils literal notranslate"><span class="pre">PyBoostModel.predictMols()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="qsprpred.extra.gpu.models.html#qsprpred.extra.gpu.models.pyboost.PyBoostModel.predictProba"><code class="docutils literal notranslate"><span class="pre">PyBoostModel.predictProba()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="qsprpred.extra.gpu.models.html#qsprpred.extra.gpu.models.pyboost.PyBoostModel.save"><code class="docutils literal notranslate"><span class="pre">PyBoostModel.save()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="qsprpred.extra.gpu.models.html#qsprpred.extra.gpu.models.pyboost.PyBoostModel.saveEstimator"><code class="docutils literal notranslate"><span class="pre">PyBoostModel.saveEstimator()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="qsprpred.extra.gpu.models.html#qsprpred.extra.gpu.models.pyboost.PyBoostModel.setParams"><code class="docutils literal notranslate"><span class="pre">PyBoostModel.setParams()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="qsprpred.extra.gpu.models.html#qsprpred.extra.gpu.models.pyboost.PyBoostModel.supportsEarlyStopping"><code class="docutils literal notranslate"><span class="pre">PyBoostModel.supportsEarlyStopping</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="qsprpred.extra.gpu.models.html#qsprpred.extra.gpu.models.pyboost.PyBoostModel.task"><code class="docutils literal notranslate"><span class="pre">PyBoostModel.task</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="qsprpred.extra.gpu.models.html#qsprpred.extra.gpu.models.pyboost.PyBoostModel.toFile"><code class="docutils literal notranslate"><span class="pre">PyBoostModel.toFile()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="qsprpred.extra.gpu.models.html#qsprpred.extra.gpu.models.pyboost.PyBoostModel.toJSON"><code class="docutils literal notranslate"><span class="pre">PyBoostModel.toJSON()</span></code></a></li>
-</ul>
-</li>
-</ul>
-</li>
+<li class="toctree-l2"><a class="reference internal" href="qsprpred.extra.gpu.models.html#qsprpred-extra-gpu-models-pyboost-module">qsprpred.extra.gpu.models.pyboost module</a></li>
 <li class="toctree-l2"><a class="reference internal" href="qsprpred.extra.gpu.models.html#module-qsprpred.extra.gpu.models.tests">qsprpred.extra.gpu.models.tests module</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="qsprpred.extra.gpu.models.html#qsprpred.extra.gpu.models.tests.ChemPropTest"><code class="docutils literal notranslate"><span class="pre">ChemPropTest</span></code></a><ul>
 <li class="toctree-l4"><a class="reference internal" href="qsprpred.extra.gpu.models.html#qsprpred.extra.gpu.models.tests.ChemPropTest.addClassCleanup"><code class="docutils literal notranslate"><span class="pre">ChemPropTest.addClassCleanup()</span></code></a></li>
