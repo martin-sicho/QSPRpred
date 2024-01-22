@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>qsprpred.models package &mdash; QSPRpred 0.1.dev1+g271e0df documentation</title>
+  <title>qsprpred.models package &mdash; QSPRpred 0.1.dev1+g5a38d53 documentation</title>
       <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
       <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=19f00094" />
 
@@ -15,7 +15,7 @@
   
         <script src="../_static/jquery.js?v=5d32c60e"></script>
         <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-        <script src="../_static/documentation_options.js?v=6a36b6b6"></script>
+        <script src="../_static/documentation_options.js?v=61c1af39"></script>
         <script src="../_static/doctools.js?v=888ff710"></script>
         <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../_static/js/theme.js"></script>
@@ -50,7 +50,7 @@
             QSPRpred
           </a>
               <div class="version">
-                v0.1.dev1+g271e0df
+                v0.1.dev1+g5a38d53
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
@@ -1318,6 +1318,40 @@ contain all  data necessary to reconstruct the object.</p>
 <dd><p>Bases: <a class="reference internal" href="#qsprpred.models.monitors.FitMonitor" title="qsprpred.models.monitors.FitMonitor"><code class="xref py py-class docutils literal notranslate"><span class="pre">FitMonitor</span></code></a></p>
 <p>Base class for monitoring the assessment of a model.</p>
 <dl class="py method">
+<dt class="sig sig-object py" id="qsprpred.models.monitors.AssessorMonitor.fromFile">
+<em class="property"><span class="pre">classmethod</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">fromFile</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.9/library/stdtypes.html#str" title="(in Python v3.9)"><span class="pre">str</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.9/library/typing.html#typing.Any" title="(in Python v3.9)"><span class="pre">Any</span></a></span></span><a class="headerlink" href="#qsprpred.models.monitors.AssessorMonitor.fromFile" title="Link to this definition"></a></dt>
+<dd><p>Initialize a new instance from a JSON file.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>filename</strong> (<a class="reference external" href="https://docs.python.org/3.9/library/stdtypes.html#str" title="(in Python v3.9)"><em>str</em></a>) – path to the JSON file</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>new instance of the class</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>instance (<a class="reference external" href="https://docs.python.org/3.9/library/functions.html#object" title="(in Python v3.9)">object</a>)</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="qsprpred.models.monitors.AssessorMonitor.fromJSON">
+<em class="property"><span class="pre">classmethod</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">fromJSON</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">json</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.9/library/stdtypes.html#str" title="(in Python v3.9)"><span class="pre">str</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.9/library/typing.html#typing.Any" title="(in Python v3.9)"><span class="pre">Any</span></a></span></span><a class="headerlink" href="#qsprpred.models.monitors.AssessorMonitor.fromJSON" title="Link to this definition"></a></dt>
+<dd><p>Reconstruct object from a JSON string.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>json</strong> (<a class="reference external" href="https://docs.python.org/3.9/library/stdtypes.html#str" title="(in Python v3.9)"><em>str</em></a>) – JSON string of the object</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>reconstructed object</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>obj (<a class="reference external" href="https://docs.python.org/3.9/library/functions.html#object" title="(in Python v3.9)">object</a>)</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
 <dt class="sig sig-object py" id="qsprpred.models.monitors.AssessorMonitor.onAssessmentEnd">
 <em class="property"><span class="pre">abstract</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">onAssessmentEnd</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">predictions</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">DataFrame</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/qsprpred/models/monitors.html#AssessorMonitor.onAssessmentEnd"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#qsprpred.models.monitors.AssessorMonitor.onAssessmentEnd" title="Link to this definition"></a></dt>
 <dd><p>Called after the assessment has finished.</p>
@@ -1457,6 +1491,41 @@ the number of epochs it was trained for</p></li>
 </dl>
 </dd></dl>
 
+<dl class="py method">
+<dt class="sig sig-object py" id="qsprpred.models.monitors.AssessorMonitor.toFile">
+<span class="sig-name descname"><span class="pre">toFile</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.9/library/stdtypes.html#str" title="(in Python v3.9)"><span class="pre">str</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.9/library/stdtypes.html#str" title="(in Python v3.9)"><span class="pre">str</span></a></span></span><a class="headerlink" href="#qsprpred.models.monitors.AssessorMonitor.toFile" title="Link to this definition"></a></dt>
+<dd><p>Serialize object to a JSON file. This JSON file should
+contain all  data necessary to reconstruct the object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>filename</strong> (<a class="reference external" href="https://docs.python.org/3.9/library/stdtypes.html#str" title="(in Python v3.9)"><em>str</em></a>) – filename to save object to</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>absolute path to the saved JSON file of the object</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>filename (<a class="reference external" href="https://docs.python.org/3.9/library/stdtypes.html#str" title="(in Python v3.9)">str</a>)</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="qsprpred.models.monitors.AssessorMonitor.toJSON">
+<span class="sig-name descname"><span class="pre">toJSON</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.9/library/stdtypes.html#str" title="(in Python v3.9)"><span class="pre">str</span></a></span></span><a class="headerlink" href="#qsprpred.models.monitors.AssessorMonitor.toJSON" title="Link to this definition"></a></dt>
+<dd><dl class="simple">
+<dt>Serialize object to a JSON string. This JSON string should</dt><dd><p>contain all data necessary to reconstruct the object.</p>
+</dd>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>JSON string of the object</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>json (<a class="reference external" href="https://docs.python.org/3.9/library/stdtypes.html#str" title="(in Python v3.9)">str</a>)</p>
+</dd>
+</dl>
+</dd></dl>
+
 </dd></dl>
 
 <dl class="py class">
@@ -1506,6 +1575,40 @@ assessment</p></li>
 </ul>
 </dd>
 </dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="qsprpred.models.monitors.BaseMonitor.fromFile">
+<em class="property"><span class="pre">classmethod</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">fromFile</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.9/library/stdtypes.html#str" title="(in Python v3.9)"><span class="pre">str</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.9/library/typing.html#typing.Any" title="(in Python v3.9)"><span class="pre">Any</span></a></span></span><a class="headerlink" href="#qsprpred.models.monitors.BaseMonitor.fromFile" title="Link to this definition"></a></dt>
+<dd><p>Initialize a new instance from a JSON file.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>filename</strong> (<a class="reference external" href="https://docs.python.org/3.9/library/stdtypes.html#str" title="(in Python v3.9)"><em>str</em></a>) – path to the JSON file</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>new instance of the class</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>instance (<a class="reference external" href="https://docs.python.org/3.9/library/functions.html#object" title="(in Python v3.9)">object</a>)</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="qsprpred.models.monitors.BaseMonitor.fromJSON">
+<em class="property"><span class="pre">classmethod</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">fromJSON</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">json</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.9/library/stdtypes.html#str" title="(in Python v3.9)"><span class="pre">str</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.9/library/typing.html#typing.Any" title="(in Python v3.9)"><span class="pre">Any</span></a></span></span><a class="headerlink" href="#qsprpred.models.monitors.BaseMonitor.fromJSON" title="Link to this definition"></a></dt>
+<dd><p>Reconstruct object from a JSON string.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>json</strong> (<a class="reference external" href="https://docs.python.org/3.9/library/stdtypes.html#str" title="(in Python v3.9)"><em>str</em></a>) – JSON string of the object</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>reconstructed object</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>obj (<a class="reference external" href="https://docs.python.org/3.9/library/functions.html#object" title="(in Python v3.9)">object</a>)</p>
+</dd>
+</dl>
+</dd></dl>
+
 <dl class="py method">
 <dt class="sig sig-object py" id="qsprpred.models.monitors.BaseMonitor.onAssessmentEnd">
 <span class="sig-name descname"><span class="pre">onAssessmentEnd</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">predictions</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">DataFrame</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/qsprpred/models/monitors.html#BaseMonitor.onAssessmentEnd"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#qsprpred.models.monitors.BaseMonitor.onAssessmentEnd" title="Link to this definition"></a></dt>
@@ -1701,6 +1804,41 @@ the number of epochs it was trained for</p></li>
 </dl>
 </dd></dl>
 
+<dl class="py method">
+<dt class="sig sig-object py" id="qsprpred.models.monitors.BaseMonitor.toFile">
+<span class="sig-name descname"><span class="pre">toFile</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.9/library/stdtypes.html#str" title="(in Python v3.9)"><span class="pre">str</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.9/library/stdtypes.html#str" title="(in Python v3.9)"><span class="pre">str</span></a></span></span><a class="headerlink" href="#qsprpred.models.monitors.BaseMonitor.toFile" title="Link to this definition"></a></dt>
+<dd><p>Serialize object to a JSON file. This JSON file should
+contain all  data necessary to reconstruct the object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>filename</strong> (<a class="reference external" href="https://docs.python.org/3.9/library/stdtypes.html#str" title="(in Python v3.9)"><em>str</em></a>) – filename to save object to</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>absolute path to the saved JSON file of the object</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>filename (<a class="reference external" href="https://docs.python.org/3.9/library/stdtypes.html#str" title="(in Python v3.9)">str</a>)</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="qsprpred.models.monitors.BaseMonitor.toJSON">
+<span class="sig-name descname"><span class="pre">toJSON</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.9/library/stdtypes.html#str" title="(in Python v3.9)"><span class="pre">str</span></a></span></span><a class="headerlink" href="#qsprpred.models.monitors.BaseMonitor.toJSON" title="Link to this definition"></a></dt>
+<dd><dl class="simple">
+<dt>Serialize object to a JSON string. This JSON string should</dt><dd><p>contain all data necessary to reconstruct the object.</p>
+</dd>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>JSON string of the object</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>json (<a class="reference external" href="https://docs.python.org/3.9/library/stdtypes.html#str" title="(in Python v3.9)">str</a>)</p>
+</dd>
+</dl>
+</dd></dl>
+
 </dd></dl>
 
 <dl class="py class">
@@ -1718,6 +1856,40 @@ scores</p></li>
 </ul>
 </dd>
 </dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="qsprpred.models.monitors.FileMonitor.fromFile">
+<em class="property"><span class="pre">classmethod</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">fromFile</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.9/library/stdtypes.html#str" title="(in Python v3.9)"><span class="pre">str</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.9/library/typing.html#typing.Any" title="(in Python v3.9)"><span class="pre">Any</span></a></span></span><a class="headerlink" href="#qsprpred.models.monitors.FileMonitor.fromFile" title="Link to this definition"></a></dt>
+<dd><p>Initialize a new instance from a JSON file.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>filename</strong> (<a class="reference external" href="https://docs.python.org/3.9/library/stdtypes.html#str" title="(in Python v3.9)"><em>str</em></a>) – path to the JSON file</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>new instance of the class</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>instance (<a class="reference external" href="https://docs.python.org/3.9/library/functions.html#object" title="(in Python v3.9)">object</a>)</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="qsprpred.models.monitors.FileMonitor.fromJSON">
+<em class="property"><span class="pre">classmethod</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">fromJSON</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">json</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.9/library/stdtypes.html#str" title="(in Python v3.9)"><span class="pre">str</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.9/library/typing.html#typing.Any" title="(in Python v3.9)"><span class="pre">Any</span></a></span></span><a class="headerlink" href="#qsprpred.models.monitors.FileMonitor.fromJSON" title="Link to this definition"></a></dt>
+<dd><p>Reconstruct object from a JSON string.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>json</strong> (<a class="reference external" href="https://docs.python.org/3.9/library/stdtypes.html#str" title="(in Python v3.9)"><em>str</em></a>) – JSON string of the object</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>reconstructed object</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>obj (<a class="reference external" href="https://docs.python.org/3.9/library/functions.html#object" title="(in Python v3.9)">object</a>)</p>
+</dd>
+</dl>
+</dd></dl>
+
 <dl class="py method">
 <dt class="sig sig-object py" id="qsprpred.models.monitors.FileMonitor.onAssessmentEnd">
 <span class="sig-name descname"><span class="pre">onAssessmentEnd</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">predictions</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">DataFrame</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/qsprpred/models/monitors.html#FileMonitor.onAssessmentEnd"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#qsprpred.models.monitors.FileMonitor.onAssessmentEnd" title="Link to this definition"></a></dt>
@@ -1913,13 +2085,82 @@ the number of epochs it was trained for</p></li>
 </dl>
 </dd></dl>
 
+<dl class="py method">
+<dt class="sig sig-object py" id="qsprpred.models.monitors.FileMonitor.toFile">
+<span class="sig-name descname"><span class="pre">toFile</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.9/library/stdtypes.html#str" title="(in Python v3.9)"><span class="pre">str</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.9/library/stdtypes.html#str" title="(in Python v3.9)"><span class="pre">str</span></a></span></span><a class="headerlink" href="#qsprpred.models.monitors.FileMonitor.toFile" title="Link to this definition"></a></dt>
+<dd><p>Serialize object to a JSON file. This JSON file should
+contain all  data necessary to reconstruct the object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>filename</strong> (<a class="reference external" href="https://docs.python.org/3.9/library/stdtypes.html#str" title="(in Python v3.9)"><em>str</em></a>) – filename to save object to</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>absolute path to the saved JSON file of the object</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>filename (<a class="reference external" href="https://docs.python.org/3.9/library/stdtypes.html#str" title="(in Python v3.9)">str</a>)</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="qsprpred.models.monitors.FileMonitor.toJSON">
+<span class="sig-name descname"><span class="pre">toJSON</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.9/library/stdtypes.html#str" title="(in Python v3.9)"><span class="pre">str</span></a></span></span><a class="headerlink" href="#qsprpred.models.monitors.FileMonitor.toJSON" title="Link to this definition"></a></dt>
+<dd><dl class="simple">
+<dt>Serialize object to a JSON string. This JSON string should</dt><dd><p>contain all data necessary to reconstruct the object.</p>
+</dd>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>JSON string of the object</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>json (<a class="reference external" href="https://docs.python.org/3.9/library/stdtypes.html#str" title="(in Python v3.9)">str</a>)</p>
+</dd>
+</dl>
+</dd></dl>
+
 </dd></dl>
 
 <dl class="py class">
 <dt class="sig sig-object py" id="qsprpred.models.monitors.FitMonitor">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">qsprpred.models.monitors.</span></span><span class="sig-name descname"><span class="pre">FitMonitor</span></span><a class="reference internal" href="../_modules/qsprpred/models/monitors.html#FitMonitor"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#qsprpred.models.monitors.FitMonitor" title="Link to this definition"></a></dt>
-<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3.9/library/abc.html#abc.ABC" title="(in Python v3.9)"><code class="xref py py-class docutils literal notranslate"><span class="pre">ABC</span></code></a></p>
+<dd><p>Bases: <a class="reference internal" href="qsprpred.utils.html#qsprpred.utils.serialization.JSONSerializable" title="qsprpred.utils.serialization.JSONSerializable"><code class="xref py py-class docutils literal notranslate"><span class="pre">JSONSerializable</span></code></a>, <a class="reference external" href="https://docs.python.org/3.9/library/abc.html#abc.ABC" title="(in Python v3.9)"><code class="xref py py-class docutils literal notranslate"><span class="pre">ABC</span></code></a></p>
 <p>Base class for monitoring the fitting of a model.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="qsprpred.models.monitors.FitMonitor.fromFile">
+<em class="property"><span class="pre">classmethod</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">fromFile</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.9/library/stdtypes.html#str" title="(in Python v3.9)"><span class="pre">str</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.9/library/typing.html#typing.Any" title="(in Python v3.9)"><span class="pre">Any</span></a></span></span><a class="headerlink" href="#qsprpred.models.monitors.FitMonitor.fromFile" title="Link to this definition"></a></dt>
+<dd><p>Initialize a new instance from a JSON file.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>filename</strong> (<a class="reference external" href="https://docs.python.org/3.9/library/stdtypes.html#str" title="(in Python v3.9)"><em>str</em></a>) – path to the JSON file</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>new instance of the class</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>instance (<a class="reference external" href="https://docs.python.org/3.9/library/functions.html#object" title="(in Python v3.9)">object</a>)</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="qsprpred.models.monitors.FitMonitor.fromJSON">
+<em class="property"><span class="pre">classmethod</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">fromJSON</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">json</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.9/library/stdtypes.html#str" title="(in Python v3.9)"><span class="pre">str</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.9/library/typing.html#typing.Any" title="(in Python v3.9)"><span class="pre">Any</span></a></span></span><a class="headerlink" href="#qsprpred.models.monitors.FitMonitor.fromJSON" title="Link to this definition"></a></dt>
+<dd><p>Reconstruct object from a JSON string.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>json</strong> (<a class="reference external" href="https://docs.python.org/3.9/library/stdtypes.html#str" title="(in Python v3.9)"><em>str</em></a>) – JSON string of the object</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>reconstructed object</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>obj (<a class="reference external" href="https://docs.python.org/3.9/library/functions.html#object" title="(in Python v3.9)">object</a>)</p>
+</dd>
+</dl>
+</dd></dl>
+
 <dl class="py method">
 <dt class="sig sig-object py" id="qsprpred.models.monitors.FitMonitor.onBatchEnd">
 <em class="property"><span class="pre">abstract</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">onBatchEnd</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">batch</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.9/library/functions.html#int" title="(in Python v3.9)"><span class="pre">int</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">loss</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.9/library/functions.html#float" title="(in Python v3.9)"><span class="pre">float</span></a></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/qsprpred/models/monitors.html#FitMonitor.onBatchEnd"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#qsprpred.models.monitors.FitMonitor.onBatchEnd" title="Link to this definition"></a></dt>
@@ -2002,6 +2243,41 @@ the number of epochs it was trained for</p></li>
 </dl>
 </dd></dl>
 
+<dl class="py method">
+<dt class="sig sig-object py" id="qsprpred.models.monitors.FitMonitor.toFile">
+<span class="sig-name descname"><span class="pre">toFile</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.9/library/stdtypes.html#str" title="(in Python v3.9)"><span class="pre">str</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.9/library/stdtypes.html#str" title="(in Python v3.9)"><span class="pre">str</span></a></span></span><a class="headerlink" href="#qsprpred.models.monitors.FitMonitor.toFile" title="Link to this definition"></a></dt>
+<dd><p>Serialize object to a JSON file. This JSON file should
+contain all  data necessary to reconstruct the object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>filename</strong> (<a class="reference external" href="https://docs.python.org/3.9/library/stdtypes.html#str" title="(in Python v3.9)"><em>str</em></a>) – filename to save object to</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>absolute path to the saved JSON file of the object</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>filename (<a class="reference external" href="https://docs.python.org/3.9/library/stdtypes.html#str" title="(in Python v3.9)">str</a>)</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="qsprpred.models.monitors.FitMonitor.toJSON">
+<span class="sig-name descname"><span class="pre">toJSON</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.9/library/stdtypes.html#str" title="(in Python v3.9)"><span class="pre">str</span></a></span></span><a class="headerlink" href="#qsprpred.models.monitors.FitMonitor.toJSON" title="Link to this definition"></a></dt>
+<dd><dl class="simple">
+<dt>Serialize object to a JSON string. This JSON string should</dt><dd><p>contain all data necessary to reconstruct the object.</p>
+</dd>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>JSON string of the object</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>json (<a class="reference external" href="https://docs.python.org/3.9/library/stdtypes.html#str" title="(in Python v3.9)">str</a>)</p>
+</dd>
+</dl>
+</dd></dl>
+
 </dd></dl>
 
 <dl class="py class">
@@ -2009,6 +2285,40 @@ the number of epochs it was trained for</p></li>
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">qsprpred.models.monitors.</span></span><span class="sig-name descname"><span class="pre">HyperparameterOptimizationMonitor</span></span><a class="reference internal" href="../_modules/qsprpred/models/monitors.html#HyperparameterOptimizationMonitor"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#qsprpred.models.monitors.HyperparameterOptimizationMonitor" title="Link to this definition"></a></dt>
 <dd><p>Bases: <a class="reference internal" href="#qsprpred.models.monitors.AssessorMonitor" title="qsprpred.models.monitors.AssessorMonitor"><code class="xref py py-class docutils literal notranslate"><span class="pre">AssessorMonitor</span></code></a></p>
 <p>Base class for monitoring the hyperparameter optimization of a model.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="qsprpred.models.monitors.HyperparameterOptimizationMonitor.fromFile">
+<em class="property"><span class="pre">classmethod</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">fromFile</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.9/library/stdtypes.html#str" title="(in Python v3.9)"><span class="pre">str</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.9/library/typing.html#typing.Any" title="(in Python v3.9)"><span class="pre">Any</span></a></span></span><a class="headerlink" href="#qsprpred.models.monitors.HyperparameterOptimizationMonitor.fromFile" title="Link to this definition"></a></dt>
+<dd><p>Initialize a new instance from a JSON file.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>filename</strong> (<a class="reference external" href="https://docs.python.org/3.9/library/stdtypes.html#str" title="(in Python v3.9)"><em>str</em></a>) – path to the JSON file</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>new instance of the class</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>instance (<a class="reference external" href="https://docs.python.org/3.9/library/functions.html#object" title="(in Python v3.9)">object</a>)</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="qsprpred.models.monitors.HyperparameterOptimizationMonitor.fromJSON">
+<em class="property"><span class="pre">classmethod</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">fromJSON</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">json</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.9/library/stdtypes.html#str" title="(in Python v3.9)"><span class="pre">str</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.9/library/typing.html#typing.Any" title="(in Python v3.9)"><span class="pre">Any</span></a></span></span><a class="headerlink" href="#qsprpred.models.monitors.HyperparameterOptimizationMonitor.fromJSON" title="Link to this definition"></a></dt>
+<dd><p>Reconstruct object from a JSON string.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>json</strong> (<a class="reference external" href="https://docs.python.org/3.9/library/stdtypes.html#str" title="(in Python v3.9)"><em>str</em></a>) – JSON string of the object</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>reconstructed object</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>obj (<a class="reference external" href="https://docs.python.org/3.9/library/functions.html#object" title="(in Python v3.9)">object</a>)</p>
+</dd>
+</dl>
+</dd></dl>
+
 <dl class="py method">
 <dt class="sig sig-object py" id="qsprpred.models.monitors.HyperparameterOptimizationMonitor.onAssessmentEnd">
 <em class="property"><span class="pre">abstract</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">onAssessmentEnd</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">predictions</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">DataFrame</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#qsprpred.models.monitors.HyperparameterOptimizationMonitor.onAssessmentEnd" title="Link to this definition"></a></dt>
@@ -2204,6 +2514,41 @@ the number of epochs it was trained for</p></li>
 </dl>
 </dd></dl>
 
+<dl class="py method">
+<dt class="sig sig-object py" id="qsprpred.models.monitors.HyperparameterOptimizationMonitor.toFile">
+<span class="sig-name descname"><span class="pre">toFile</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.9/library/stdtypes.html#str" title="(in Python v3.9)"><span class="pre">str</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.9/library/stdtypes.html#str" title="(in Python v3.9)"><span class="pre">str</span></a></span></span><a class="headerlink" href="#qsprpred.models.monitors.HyperparameterOptimizationMonitor.toFile" title="Link to this definition"></a></dt>
+<dd><p>Serialize object to a JSON file. This JSON file should
+contain all  data necessary to reconstruct the object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>filename</strong> (<a class="reference external" href="https://docs.python.org/3.9/library/stdtypes.html#str" title="(in Python v3.9)"><em>str</em></a>) – filename to save object to</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>absolute path to the saved JSON file of the object</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>filename (<a class="reference external" href="https://docs.python.org/3.9/library/stdtypes.html#str" title="(in Python v3.9)">str</a>)</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="qsprpred.models.monitors.HyperparameterOptimizationMonitor.toJSON">
+<span class="sig-name descname"><span class="pre">toJSON</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.9/library/stdtypes.html#str" title="(in Python v3.9)"><span class="pre">str</span></a></span></span><a class="headerlink" href="#qsprpred.models.monitors.HyperparameterOptimizationMonitor.toJSON" title="Link to this definition"></a></dt>
+<dd><dl class="simple">
+<dt>Serialize object to a JSON string. This JSON string should</dt><dd><p>contain all data necessary to reconstruct the object.</p>
+</dd>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>JSON string of the object</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>json (<a class="reference external" href="https://docs.python.org/3.9/library/stdtypes.html#str" title="(in Python v3.9)">str</a>)</p>
+</dd>
+</dl>
+</dd></dl>
+
 </dd></dl>
 
 <dl class="py class">
@@ -2222,6 +2567,40 @@ the number of epochs it was trained for</p></li>
 <dd class="field-odd"><p><strong>monitors</strong> (<a class="reference external" href="https://docs.python.org/3.9/library/stdtypes.html#list" title="(in Python v3.9)"><em>list</em></a><em>[</em><a class="reference internal" href="#qsprpred.models.monitors.HyperparameterOptimizationMonitor" title="qsprpred.models.monitors.HyperparameterOptimizationMonitor"><em>HyperparameterOptimizationMonitor</em></a><em>]</em>) – list of monitors</p>
 </dd>
 </dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="qsprpred.models.monitors.ListMonitor.fromFile">
+<em class="property"><span class="pre">classmethod</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">fromFile</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.9/library/stdtypes.html#str" title="(in Python v3.9)"><span class="pre">str</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.9/library/typing.html#typing.Any" title="(in Python v3.9)"><span class="pre">Any</span></a></span></span><a class="headerlink" href="#qsprpred.models.monitors.ListMonitor.fromFile" title="Link to this definition"></a></dt>
+<dd><p>Initialize a new instance from a JSON file.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>filename</strong> (<a class="reference external" href="https://docs.python.org/3.9/library/stdtypes.html#str" title="(in Python v3.9)"><em>str</em></a>) – path to the JSON file</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>new instance of the class</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>instance (<a class="reference external" href="https://docs.python.org/3.9/library/functions.html#object" title="(in Python v3.9)">object</a>)</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="qsprpred.models.monitors.ListMonitor.fromJSON">
+<em class="property"><span class="pre">classmethod</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">fromJSON</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">json</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.9/library/stdtypes.html#str" title="(in Python v3.9)"><span class="pre">str</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.9/library/typing.html#typing.Any" title="(in Python v3.9)"><span class="pre">Any</span></a></span></span><a class="headerlink" href="#qsprpred.models.monitors.ListMonitor.fromJSON" title="Link to this definition"></a></dt>
+<dd><p>Reconstruct object from a JSON string.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>json</strong> (<a class="reference external" href="https://docs.python.org/3.9/library/stdtypes.html#str" title="(in Python v3.9)"><em>str</em></a>) – JSON string of the object</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>reconstructed object</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>obj (<a class="reference external" href="https://docs.python.org/3.9/library/functions.html#object" title="(in Python v3.9)">object</a>)</p>
+</dd>
+</dl>
+</dd></dl>
+
 <dl class="py method">
 <dt class="sig sig-object py" id="qsprpred.models.monitors.ListMonitor.onAssessmentEnd">
 <span class="sig-name descname"><span class="pre">onAssessmentEnd</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">predictions</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">DataFrame</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/qsprpred/models/monitors.html#ListMonitor.onAssessmentEnd"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#qsprpred.models.monitors.ListMonitor.onAssessmentEnd" title="Link to this definition"></a></dt>
@@ -2417,6 +2796,41 @@ the number of epochs it was trained for</p></li>
 </dl>
 </dd></dl>
 
+<dl class="py method">
+<dt class="sig sig-object py" id="qsprpred.models.monitors.ListMonitor.toFile">
+<span class="sig-name descname"><span class="pre">toFile</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.9/library/stdtypes.html#str" title="(in Python v3.9)"><span class="pre">str</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.9/library/stdtypes.html#str" title="(in Python v3.9)"><span class="pre">str</span></a></span></span><a class="headerlink" href="#qsprpred.models.monitors.ListMonitor.toFile" title="Link to this definition"></a></dt>
+<dd><p>Serialize object to a JSON file. This JSON file should
+contain all  data necessary to reconstruct the object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>filename</strong> (<a class="reference external" href="https://docs.python.org/3.9/library/stdtypes.html#str" title="(in Python v3.9)"><em>str</em></a>) – filename to save object to</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>absolute path to the saved JSON file of the object</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>filename (<a class="reference external" href="https://docs.python.org/3.9/library/stdtypes.html#str" title="(in Python v3.9)">str</a>)</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="qsprpred.models.monitors.ListMonitor.toJSON">
+<span class="sig-name descname"><span class="pre">toJSON</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.9/library/stdtypes.html#str" title="(in Python v3.9)"><span class="pre">str</span></a></span></span><a class="headerlink" href="#qsprpred.models.monitors.ListMonitor.toJSON" title="Link to this definition"></a></dt>
+<dd><dl class="simple">
+<dt>Serialize object to a JSON string. This JSON string should</dt><dd><p>contain all data necessary to reconstruct the object.</p>
+</dd>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>JSON string of the object</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>json (<a class="reference external" href="https://docs.python.org/3.9/library/stdtypes.html#str" title="(in Python v3.9)">str</a>)</p>
+</dd>
+</dl>
+</dd></dl>
+
 </dd></dl>
 
 <dl class="py class">
@@ -2424,6 +2838,40 @@ the number of epochs it was trained for</p></li>
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">qsprpred.models.monitors.</span></span><span class="sig-name descname"><span class="pre">NullMonitor</span></span><a class="reference internal" href="../_modules/qsprpred/models/monitors.html#NullMonitor"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#qsprpred.models.monitors.NullMonitor" title="Link to this definition"></a></dt>
 <dd><p>Bases: <a class="reference internal" href="#qsprpred.models.monitors.HyperparameterOptimizationMonitor" title="qsprpred.models.monitors.HyperparameterOptimizationMonitor"><code class="xref py py-class docutils literal notranslate"><span class="pre">HyperparameterOptimizationMonitor</span></code></a></p>
 <p>Monitor that does nothing.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="qsprpred.models.monitors.NullMonitor.fromFile">
+<em class="property"><span class="pre">classmethod</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">fromFile</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.9/library/stdtypes.html#str" title="(in Python v3.9)"><span class="pre">str</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.9/library/typing.html#typing.Any" title="(in Python v3.9)"><span class="pre">Any</span></a></span></span><a class="headerlink" href="#qsprpred.models.monitors.NullMonitor.fromFile" title="Link to this definition"></a></dt>
+<dd><p>Initialize a new instance from a JSON file.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>filename</strong> (<a class="reference external" href="https://docs.python.org/3.9/library/stdtypes.html#str" title="(in Python v3.9)"><em>str</em></a>) – path to the JSON file</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>new instance of the class</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>instance (<a class="reference external" href="https://docs.python.org/3.9/library/functions.html#object" title="(in Python v3.9)">object</a>)</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="qsprpred.models.monitors.NullMonitor.fromJSON">
+<em class="property"><span class="pre">classmethod</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">fromJSON</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">json</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.9/library/stdtypes.html#str" title="(in Python v3.9)"><span class="pre">str</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.9/library/typing.html#typing.Any" title="(in Python v3.9)"><span class="pre">Any</span></a></span></span><a class="headerlink" href="#qsprpred.models.monitors.NullMonitor.fromJSON" title="Link to this definition"></a></dt>
+<dd><p>Reconstruct object from a JSON string.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>json</strong> (<a class="reference external" href="https://docs.python.org/3.9/library/stdtypes.html#str" title="(in Python v3.9)"><em>str</em></a>) – JSON string of the object</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>reconstructed object</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>obj (<a class="reference external" href="https://docs.python.org/3.9/library/functions.html#object" title="(in Python v3.9)">object</a>)</p>
+</dd>
+</dl>
+</dd></dl>
+
 <dl class="py method">
 <dt class="sig sig-object py" id="qsprpred.models.monitors.NullMonitor.onAssessmentEnd">
 <span class="sig-name descname"><span class="pre">onAssessmentEnd</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">predictions</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">DataFrame</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/qsprpred/models/monitors.html#NullMonitor.onAssessmentEnd"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#qsprpred.models.monitors.NullMonitor.onAssessmentEnd" title="Link to this definition"></a></dt>
@@ -2619,6 +3067,41 @@ the number of epochs it was trained for</p></li>
 </dl>
 </dd></dl>
 
+<dl class="py method">
+<dt class="sig sig-object py" id="qsprpred.models.monitors.NullMonitor.toFile">
+<span class="sig-name descname"><span class="pre">toFile</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.9/library/stdtypes.html#str" title="(in Python v3.9)"><span class="pre">str</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.9/library/stdtypes.html#str" title="(in Python v3.9)"><span class="pre">str</span></a></span></span><a class="headerlink" href="#qsprpred.models.monitors.NullMonitor.toFile" title="Link to this definition"></a></dt>
+<dd><p>Serialize object to a JSON file. This JSON file should
+contain all  data necessary to reconstruct the object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>filename</strong> (<a class="reference external" href="https://docs.python.org/3.9/library/stdtypes.html#str" title="(in Python v3.9)"><em>str</em></a>) – filename to save object to</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>absolute path to the saved JSON file of the object</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>filename (<a class="reference external" href="https://docs.python.org/3.9/library/stdtypes.html#str" title="(in Python v3.9)">str</a>)</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="qsprpred.models.monitors.NullMonitor.toJSON">
+<span class="sig-name descname"><span class="pre">toJSON</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.9/library/stdtypes.html#str" title="(in Python v3.9)"><span class="pre">str</span></a></span></span><a class="headerlink" href="#qsprpred.models.monitors.NullMonitor.toJSON" title="Link to this definition"></a></dt>
+<dd><dl class="simple">
+<dt>Serialize object to a JSON string. This JSON string should</dt><dd><p>contain all data necessary to reconstruct the object.</p>
+</dd>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>JSON string of the object</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>json (<a class="reference external" href="https://docs.python.org/3.9/library/stdtypes.html#str" title="(in Python v3.9)">str</a>)</p>
+</dd>
+</dl>
+</dd></dl>
+
 </dd></dl>
 
 <dl class="py class">
@@ -2635,6 +3118,40 @@ the number of epochs it was trained for</p></li>
 </ul>
 </dd>
 </dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="qsprpred.models.monitors.WandBMonitor.fromFile">
+<em class="property"><span class="pre">classmethod</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">fromFile</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.9/library/stdtypes.html#str" title="(in Python v3.9)"><span class="pre">str</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.9/library/typing.html#typing.Any" title="(in Python v3.9)"><span class="pre">Any</span></a></span></span><a class="headerlink" href="#qsprpred.models.monitors.WandBMonitor.fromFile" title="Link to this definition"></a></dt>
+<dd><p>Initialize a new instance from a JSON file.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>filename</strong> (<a class="reference external" href="https://docs.python.org/3.9/library/stdtypes.html#str" title="(in Python v3.9)"><em>str</em></a>) – path to the JSON file</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>new instance of the class</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>instance (<a class="reference external" href="https://docs.python.org/3.9/library/functions.html#object" title="(in Python v3.9)">object</a>)</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="qsprpred.models.monitors.WandBMonitor.fromJSON">
+<em class="property"><span class="pre">classmethod</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">fromJSON</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">json</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.9/library/stdtypes.html#str" title="(in Python v3.9)"><span class="pre">str</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.9/library/typing.html#typing.Any" title="(in Python v3.9)"><span class="pre">Any</span></a></span></span><a class="headerlink" href="#qsprpred.models.monitors.WandBMonitor.fromJSON" title="Link to this definition"></a></dt>
+<dd><p>Reconstruct object from a JSON string.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>json</strong> (<a class="reference external" href="https://docs.python.org/3.9/library/stdtypes.html#str" title="(in Python v3.9)"><em>str</em></a>) – JSON string of the object</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>reconstructed object</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>obj (<a class="reference external" href="https://docs.python.org/3.9/library/functions.html#object" title="(in Python v3.9)">object</a>)</p>
+</dd>
+</dl>
+</dd></dl>
+
 <dl class="py method">
 <dt class="sig sig-object py" id="qsprpred.models.monitors.WandBMonitor.onAssessmentEnd">
 <span class="sig-name descname"><span class="pre">onAssessmentEnd</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">predictions</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">DataFrame</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#qsprpred.models.monitors.WandBMonitor.onAssessmentEnd" title="Link to this definition"></a></dt>
@@ -2819,6 +3336,41 @@ the number of epochs it was trained for</p></li>
 <li><p><strong>config</strong> (<a class="reference external" href="https://docs.python.org/3.9/library/stdtypes.html#dict" title="(in Python v3.9)"><em>dict</em></a>) – configuration of the hyperparameter optimization</p></li>
 <li><p><strong>optimization_type</strong> (<a class="reference external" href="https://docs.python.org/3.9/library/stdtypes.html#str" title="(in Python v3.9)"><em>str</em></a>) – type of hyperparameter optimization</p></li>
 </ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="qsprpred.models.monitors.WandBMonitor.toFile">
+<span class="sig-name descname"><span class="pre">toFile</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.9/library/stdtypes.html#str" title="(in Python v3.9)"><span class="pre">str</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.9/library/stdtypes.html#str" title="(in Python v3.9)"><span class="pre">str</span></a></span></span><a class="headerlink" href="#qsprpred.models.monitors.WandBMonitor.toFile" title="Link to this definition"></a></dt>
+<dd><p>Serialize object to a JSON file. This JSON file should
+contain all  data necessary to reconstruct the object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>filename</strong> (<a class="reference external" href="https://docs.python.org/3.9/library/stdtypes.html#str" title="(in Python v3.9)"><em>str</em></a>) – filename to save object to</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>absolute path to the saved JSON file of the object</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>filename (<a class="reference external" href="https://docs.python.org/3.9/library/stdtypes.html#str" title="(in Python v3.9)">str</a>)</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="qsprpred.models.monitors.WandBMonitor.toJSON">
+<span class="sig-name descname"><span class="pre">toJSON</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.9/library/stdtypes.html#str" title="(in Python v3.9)"><span class="pre">str</span></a></span></span><a class="headerlink" href="#qsprpred.models.monitors.WandBMonitor.toJSON" title="Link to this definition"></a></dt>
+<dd><dl class="simple">
+<dt>Serialize object to a JSON string. This JSON string should</dt><dd><p>contain all data necessary to reconstruct the object.</p>
+</dd>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>JSON string of the object</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>json (<a class="reference external" href="https://docs.python.org/3.9/library/stdtypes.html#str" title="(in Python v3.9)">str</a>)</p>
 </dd>
 </dl>
 </dd></dl>

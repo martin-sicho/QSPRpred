@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>qsprpred package &mdash; QSPRpred 0.1.dev1+g271e0df documentation</title>
+  <title>qsprpred package &mdash; QSPRpred 0.1.dev1+g5a38d53 documentation</title>
       <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
       <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=19f00094" />
 
@@ -15,7 +15,7 @@
   
         <script src="../_static/jquery.js?v=5d32c60e"></script>
         <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-        <script src="../_static/documentation_options.js?v=6a36b6b6"></script>
+        <script src="../_static/documentation_options.js?v=61c1af39"></script>
         <script src="../_static/doctools.js?v=888ff710"></script>
         <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../_static/js/theme.js"></script>
@@ -50,7 +50,7 @@
             QSPRpred
           </a>
               <div class="version">
-                v0.1.dev1+g271e0df
+                v0.1.dev1+g5a38d53
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
@@ -233,6 +233,7 @@
 <li class="toctree-l4"><a class="reference internal" href="qsprpred.benchmarks.html#qsprpred.benchmarks.tests.BenchmarkingTest.assertWarnsRegex"><code class="docutils literal notranslate"><span class="pre">BenchmarkingTest.assertWarnsRegex()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="qsprpred.benchmarks.html#qsprpred.benchmarks.tests.BenchmarkingTest.assert_"><code class="docutils literal notranslate"><span class="pre">BenchmarkingTest.assert_()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="qsprpred.benchmarks.html#qsprpred.benchmarks.tests.BenchmarkingTest.checkRunResults"><code class="docutils literal notranslate"><span class="pre">BenchmarkingTest.checkRunResults()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="qsprpred.benchmarks.html#qsprpred.benchmarks.tests.BenchmarkingTest.checkSettings"><code class="docutils literal notranslate"><span class="pre">BenchmarkingTest.checkSettings()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="qsprpred.benchmarks.html#qsprpred.benchmarks.tests.BenchmarkingTest.clearGenerated"><code class="docutils literal notranslate"><span class="pre">BenchmarkingTest.clearGenerated()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="qsprpred.benchmarks.html#qsprpred.benchmarks.tests.BenchmarkingTest.countTestCases"><code class="docutils literal notranslate"><span class="pre">BenchmarkingTest.countTestCases()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="qsprpred.benchmarks.html#qsprpred.benchmarks.tests.BenchmarkingTest.createLargeMultitaskDataSet"><code class="docutils literal notranslate"><span class="pre">BenchmarkingTest.createLargeMultitaskDataSet()</span></code></a></li>
@@ -529,6 +530,8 @@
 </li>
 <li class="toctree-l2"><a class="reference internal" href="qsprpred.models.html#module-qsprpred.models.monitors">qsprpred.models.monitors module</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="qsprpred.models.html#qsprpred.models.monitors.AssessorMonitor"><code class="docutils literal notranslate"><span class="pre">AssessorMonitor</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="qsprpred.models.html#qsprpred.models.monitors.AssessorMonitor.fromFile"><code class="docutils literal notranslate"><span class="pre">AssessorMonitor.fromFile()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="qsprpred.models.html#qsprpred.models.monitors.AssessorMonitor.fromJSON"><code class="docutils literal notranslate"><span class="pre">AssessorMonitor.fromJSON()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="qsprpred.models.html#qsprpred.models.monitors.AssessorMonitor.onAssessmentEnd"><code class="docutils literal notranslate"><span class="pre">AssessorMonitor.onAssessmentEnd()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="qsprpred.models.html#qsprpred.models.monitors.AssessorMonitor.onAssessmentStart"><code class="docutils literal notranslate"><span class="pre">AssessorMonitor.onAssessmentStart()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="qsprpred.models.html#qsprpred.models.monitors.AssessorMonitor.onBatchEnd"><code class="docutils literal notranslate"><span class="pre">AssessorMonitor.onBatchEnd()</span></code></a></li>
@@ -539,9 +542,13 @@
 <li class="toctree-l4"><a class="reference internal" href="qsprpred.models.html#qsprpred.models.monitors.AssessorMonitor.onFitStart"><code class="docutils literal notranslate"><span class="pre">AssessorMonitor.onFitStart()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="qsprpred.models.html#qsprpred.models.monitors.AssessorMonitor.onFoldEnd"><code class="docutils literal notranslate"><span class="pre">AssessorMonitor.onFoldEnd()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="qsprpred.models.html#qsprpred.models.monitors.AssessorMonitor.onFoldStart"><code class="docutils literal notranslate"><span class="pre">AssessorMonitor.onFoldStart()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="qsprpred.models.html#qsprpred.models.monitors.AssessorMonitor.toFile"><code class="docutils literal notranslate"><span class="pre">AssessorMonitor.toFile()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="qsprpred.models.html#qsprpred.models.monitors.AssessorMonitor.toJSON"><code class="docutils literal notranslate"><span class="pre">AssessorMonitor.toJSON()</span></code></a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="qsprpred.models.html#qsprpred.models.monitors.BaseMonitor"><code class="docutils literal notranslate"><span class="pre">BaseMonitor</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="qsprpred.models.html#qsprpred.models.monitors.BaseMonitor.fromFile"><code class="docutils literal notranslate"><span class="pre">BaseMonitor.fromFile()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="qsprpred.models.html#qsprpred.models.monitors.BaseMonitor.fromJSON"><code class="docutils literal notranslate"><span class="pre">BaseMonitor.fromJSON()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="qsprpred.models.html#qsprpred.models.monitors.BaseMonitor.onAssessmentEnd"><code class="docutils literal notranslate"><span class="pre">BaseMonitor.onAssessmentEnd()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="qsprpred.models.html#qsprpred.models.monitors.BaseMonitor.onAssessmentStart"><code class="docutils literal notranslate"><span class="pre">BaseMonitor.onAssessmentStart()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="qsprpred.models.html#qsprpred.models.monitors.BaseMonitor.onBatchEnd"><code class="docutils literal notranslate"><span class="pre">BaseMonitor.onBatchEnd()</span></code></a></li>
@@ -556,9 +563,13 @@
 <li class="toctree-l4"><a class="reference internal" href="qsprpred.models.html#qsprpred.models.monitors.BaseMonitor.onIterationStart"><code class="docutils literal notranslate"><span class="pre">BaseMonitor.onIterationStart()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="qsprpred.models.html#qsprpred.models.monitors.BaseMonitor.onOptimizationEnd"><code class="docutils literal notranslate"><span class="pre">BaseMonitor.onOptimizationEnd()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="qsprpred.models.html#qsprpred.models.monitors.BaseMonitor.onOptimizationStart"><code class="docutils literal notranslate"><span class="pre">BaseMonitor.onOptimizationStart()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="qsprpred.models.html#qsprpred.models.monitors.BaseMonitor.toFile"><code class="docutils literal notranslate"><span class="pre">BaseMonitor.toFile()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="qsprpred.models.html#qsprpred.models.monitors.BaseMonitor.toJSON"><code class="docutils literal notranslate"><span class="pre">BaseMonitor.toJSON()</span></code></a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="qsprpred.models.html#qsprpred.models.monitors.FileMonitor"><code class="docutils literal notranslate"><span class="pre">FileMonitor</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="qsprpred.models.html#qsprpred.models.monitors.FileMonitor.fromFile"><code class="docutils literal notranslate"><span class="pre">FileMonitor.fromFile()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="qsprpred.models.html#qsprpred.models.monitors.FileMonitor.fromJSON"><code class="docutils literal notranslate"><span class="pre">FileMonitor.fromJSON()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="qsprpred.models.html#qsprpred.models.monitors.FileMonitor.onAssessmentEnd"><code class="docutils literal notranslate"><span class="pre">FileMonitor.onAssessmentEnd()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="qsprpred.models.html#qsprpred.models.monitors.FileMonitor.onAssessmentStart"><code class="docutils literal notranslate"><span class="pre">FileMonitor.onAssessmentStart()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="qsprpred.models.html#qsprpred.models.monitors.FileMonitor.onBatchEnd"><code class="docutils literal notranslate"><span class="pre">FileMonitor.onBatchEnd()</span></code></a></li>
@@ -573,18 +584,26 @@
 <li class="toctree-l4"><a class="reference internal" href="qsprpred.models.html#qsprpred.models.monitors.FileMonitor.onIterationStart"><code class="docutils literal notranslate"><span class="pre">FileMonitor.onIterationStart()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="qsprpred.models.html#qsprpred.models.monitors.FileMonitor.onOptimizationEnd"><code class="docutils literal notranslate"><span class="pre">FileMonitor.onOptimizationEnd()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="qsprpred.models.html#qsprpred.models.monitors.FileMonitor.onOptimizationStart"><code class="docutils literal notranslate"><span class="pre">FileMonitor.onOptimizationStart()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="qsprpred.models.html#qsprpred.models.monitors.FileMonitor.toFile"><code class="docutils literal notranslate"><span class="pre">FileMonitor.toFile()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="qsprpred.models.html#qsprpred.models.monitors.FileMonitor.toJSON"><code class="docutils literal notranslate"><span class="pre">FileMonitor.toJSON()</span></code></a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="qsprpred.models.html#qsprpred.models.monitors.FitMonitor"><code class="docutils literal notranslate"><span class="pre">FitMonitor</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="qsprpred.models.html#qsprpred.models.monitors.FitMonitor.fromFile"><code class="docutils literal notranslate"><span class="pre">FitMonitor.fromFile()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="qsprpred.models.html#qsprpred.models.monitors.FitMonitor.fromJSON"><code class="docutils literal notranslate"><span class="pre">FitMonitor.fromJSON()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="qsprpred.models.html#qsprpred.models.monitors.FitMonitor.onBatchEnd"><code class="docutils literal notranslate"><span class="pre">FitMonitor.onBatchEnd()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="qsprpred.models.html#qsprpred.models.monitors.FitMonitor.onBatchStart"><code class="docutils literal notranslate"><span class="pre">FitMonitor.onBatchStart()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="qsprpred.models.html#qsprpred.models.monitors.FitMonitor.onEpochEnd"><code class="docutils literal notranslate"><span class="pre">FitMonitor.onEpochEnd()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="qsprpred.models.html#qsprpred.models.monitors.FitMonitor.onEpochStart"><code class="docutils literal notranslate"><span class="pre">FitMonitor.onEpochStart()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="qsprpred.models.html#qsprpred.models.monitors.FitMonitor.onFitEnd"><code class="docutils literal notranslate"><span class="pre">FitMonitor.onFitEnd()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="qsprpred.models.html#qsprpred.models.monitors.FitMonitor.onFitStart"><code class="docutils literal notranslate"><span class="pre">FitMonitor.onFitStart()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="qsprpred.models.html#qsprpred.models.monitors.FitMonitor.toFile"><code class="docutils literal notranslate"><span class="pre">FitMonitor.toFile()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="qsprpred.models.html#qsprpred.models.monitors.FitMonitor.toJSON"><code class="docutils literal notranslate"><span class="pre">FitMonitor.toJSON()</span></code></a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="qsprpred.models.html#qsprpred.models.monitors.HyperparameterOptimizationMonitor"><code class="docutils literal notranslate"><span class="pre">HyperparameterOptimizationMonitor</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="qsprpred.models.html#qsprpred.models.monitors.HyperparameterOptimizationMonitor.fromFile"><code class="docutils literal notranslate"><span class="pre">HyperparameterOptimizationMonitor.fromFile()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="qsprpred.models.html#qsprpred.models.monitors.HyperparameterOptimizationMonitor.fromJSON"><code class="docutils literal notranslate"><span class="pre">HyperparameterOptimizationMonitor.fromJSON()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="qsprpred.models.html#qsprpred.models.monitors.HyperparameterOptimizationMonitor.onAssessmentEnd"><code class="docutils literal notranslate"><span class="pre">HyperparameterOptimizationMonitor.onAssessmentEnd()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="qsprpred.models.html#qsprpred.models.monitors.HyperparameterOptimizationMonitor.onAssessmentStart"><code class="docutils literal notranslate"><span class="pre">HyperparameterOptimizationMonitor.onAssessmentStart()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="qsprpred.models.html#qsprpred.models.monitors.HyperparameterOptimizationMonitor.onBatchEnd"><code class="docutils literal notranslate"><span class="pre">HyperparameterOptimizationMonitor.onBatchEnd()</span></code></a></li>
@@ -599,9 +618,13 @@
 <li class="toctree-l4"><a class="reference internal" href="qsprpred.models.html#qsprpred.models.monitors.HyperparameterOptimizationMonitor.onIterationStart"><code class="docutils literal notranslate"><span class="pre">HyperparameterOptimizationMonitor.onIterationStart()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="qsprpred.models.html#qsprpred.models.monitors.HyperparameterOptimizationMonitor.onOptimizationEnd"><code class="docutils literal notranslate"><span class="pre">HyperparameterOptimizationMonitor.onOptimizationEnd()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="qsprpred.models.html#qsprpred.models.monitors.HyperparameterOptimizationMonitor.onOptimizationStart"><code class="docutils literal notranslate"><span class="pre">HyperparameterOptimizationMonitor.onOptimizationStart()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="qsprpred.models.html#qsprpred.models.monitors.HyperparameterOptimizationMonitor.toFile"><code class="docutils literal notranslate"><span class="pre">HyperparameterOptimizationMonitor.toFile()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="qsprpred.models.html#qsprpred.models.monitors.HyperparameterOptimizationMonitor.toJSON"><code class="docutils literal notranslate"><span class="pre">HyperparameterOptimizationMonitor.toJSON()</span></code></a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="qsprpred.models.html#qsprpred.models.monitors.ListMonitor"><code class="docutils literal notranslate"><span class="pre">ListMonitor</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="qsprpred.models.html#qsprpred.models.monitors.ListMonitor.fromFile"><code class="docutils literal notranslate"><span class="pre">ListMonitor.fromFile()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="qsprpred.models.html#qsprpred.models.monitors.ListMonitor.fromJSON"><code class="docutils literal notranslate"><span class="pre">ListMonitor.fromJSON()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="qsprpred.models.html#qsprpred.models.monitors.ListMonitor.onAssessmentEnd"><code class="docutils literal notranslate"><span class="pre">ListMonitor.onAssessmentEnd()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="qsprpred.models.html#qsprpred.models.monitors.ListMonitor.onAssessmentStart"><code class="docutils literal notranslate"><span class="pre">ListMonitor.onAssessmentStart()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="qsprpred.models.html#qsprpred.models.monitors.ListMonitor.onBatchEnd"><code class="docutils literal notranslate"><span class="pre">ListMonitor.onBatchEnd()</span></code></a></li>
@@ -616,9 +639,13 @@
 <li class="toctree-l4"><a class="reference internal" href="qsprpred.models.html#qsprpred.models.monitors.ListMonitor.onIterationStart"><code class="docutils literal notranslate"><span class="pre">ListMonitor.onIterationStart()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="qsprpred.models.html#qsprpred.models.monitors.ListMonitor.onOptimizationEnd"><code class="docutils literal notranslate"><span class="pre">ListMonitor.onOptimizationEnd()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="qsprpred.models.html#qsprpred.models.monitors.ListMonitor.onOptimizationStart"><code class="docutils literal notranslate"><span class="pre">ListMonitor.onOptimizationStart()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="qsprpred.models.html#qsprpred.models.monitors.ListMonitor.toFile"><code class="docutils literal notranslate"><span class="pre">ListMonitor.toFile()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="qsprpred.models.html#qsprpred.models.monitors.ListMonitor.toJSON"><code class="docutils literal notranslate"><span class="pre">ListMonitor.toJSON()</span></code></a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="qsprpred.models.html#qsprpred.models.monitors.NullMonitor"><code class="docutils literal notranslate"><span class="pre">NullMonitor</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="qsprpred.models.html#qsprpred.models.monitors.NullMonitor.fromFile"><code class="docutils literal notranslate"><span class="pre">NullMonitor.fromFile()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="qsprpred.models.html#qsprpred.models.monitors.NullMonitor.fromJSON"><code class="docutils literal notranslate"><span class="pre">NullMonitor.fromJSON()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="qsprpred.models.html#qsprpred.models.monitors.NullMonitor.onAssessmentEnd"><code class="docutils literal notranslate"><span class="pre">NullMonitor.onAssessmentEnd()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="qsprpred.models.html#qsprpred.models.monitors.NullMonitor.onAssessmentStart"><code class="docutils literal notranslate"><span class="pre">NullMonitor.onAssessmentStart()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="qsprpred.models.html#qsprpred.models.monitors.NullMonitor.onBatchEnd"><code class="docutils literal notranslate"><span class="pre">NullMonitor.onBatchEnd()</span></code></a></li>
@@ -633,9 +660,13 @@
 <li class="toctree-l4"><a class="reference internal" href="qsprpred.models.html#qsprpred.models.monitors.NullMonitor.onIterationStart"><code class="docutils literal notranslate"><span class="pre">NullMonitor.onIterationStart()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="qsprpred.models.html#qsprpred.models.monitors.NullMonitor.onOptimizationEnd"><code class="docutils literal notranslate"><span class="pre">NullMonitor.onOptimizationEnd()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="qsprpred.models.html#qsprpred.models.monitors.NullMonitor.onOptimizationStart"><code class="docutils literal notranslate"><span class="pre">NullMonitor.onOptimizationStart()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="qsprpred.models.html#qsprpred.models.monitors.NullMonitor.toFile"><code class="docutils literal notranslate"><span class="pre">NullMonitor.toFile()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="qsprpred.models.html#qsprpred.models.monitors.NullMonitor.toJSON"><code class="docutils literal notranslate"><span class="pre">NullMonitor.toJSON()</span></code></a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="qsprpred.models.html#qsprpred.models.monitors.WandBMonitor"><code class="docutils literal notranslate"><span class="pre">WandBMonitor</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="qsprpred.models.html#qsprpred.models.monitors.WandBMonitor.fromFile"><code class="docutils literal notranslate"><span class="pre">WandBMonitor.fromFile()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="qsprpred.models.html#qsprpred.models.monitors.WandBMonitor.fromJSON"><code class="docutils literal notranslate"><span class="pre">WandBMonitor.fromJSON()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="qsprpred.models.html#qsprpred.models.monitors.WandBMonitor.onAssessmentEnd"><code class="docutils literal notranslate"><span class="pre">WandBMonitor.onAssessmentEnd()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="qsprpred.models.html#qsprpred.models.monitors.WandBMonitor.onAssessmentStart"><code class="docutils literal notranslate"><span class="pre">WandBMonitor.onAssessmentStart()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="qsprpred.models.html#qsprpred.models.monitors.WandBMonitor.onBatchEnd"><code class="docutils literal notranslate"><span class="pre">WandBMonitor.onBatchEnd()</span></code></a></li>
@@ -650,6 +681,8 @@
 <li class="toctree-l4"><a class="reference internal" href="qsprpred.models.html#qsprpred.models.monitors.WandBMonitor.onIterationStart"><code class="docutils literal notranslate"><span class="pre">WandBMonitor.onIterationStart()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="qsprpred.models.html#qsprpred.models.monitors.WandBMonitor.onOptimizationEnd"><code class="docutils literal notranslate"><span class="pre">WandBMonitor.onOptimizationEnd()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="qsprpred.models.html#qsprpred.models.monitors.WandBMonitor.onOptimizationStart"><code class="docutils literal notranslate"><span class="pre">WandBMonitor.onOptimizationStart()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="qsprpred.models.html#qsprpred.models.monitors.WandBMonitor.toFile"><code class="docutils literal notranslate"><span class="pre">WandBMonitor.toFile()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="qsprpred.models.html#qsprpred.models.monitors.WandBMonitor.toJSON"><code class="docutils literal notranslate"><span class="pre">WandBMonitor.toJSON()</span></code></a></li>
 </ul>
 </li>
 </ul>
